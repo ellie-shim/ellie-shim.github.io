@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Make github blog
+title: 정적블로그를 만들어보자.
 date: 2017-09-19 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: software.jpg # Add image post (optional)
@@ -8,3 +8,4 @@ tags: [Productivity, Software] # add tag
 ---
 
 정적블로그를 만들어보자. 어렵다.
+왜 안될까?
