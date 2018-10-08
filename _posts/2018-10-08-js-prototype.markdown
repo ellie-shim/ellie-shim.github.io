@@ -47,7 +47,7 @@ person2.introduce(); // 안녕하세요 제 이름은 둘리입니다.
 - `personPrototype`은 `person1`의 프로토타입이다.
 - `person1` 객체는 `personPrototype` 객체를 상속받았다
 
-1. `new` => 126번 줄
+2. `new` => 126번 줄
 
 
 ## 프로토타입 읽기
@@ -159,7 +159,7 @@ typeof Object; // 'function'
 
 - JS에는 `Object` 뿐만 아니라 내장된 많은 생성자들이 있고 프로그래머가 직접 생성자를 만들 수도 있다.
 
-```
+```js
 // 생성자 정의
 function Person(name){
     this.name = name;
@@ -182,13 +182,13 @@ Person.name // 'name'
 - ` const person1 = new Person('길동'); ` : `person1`이 `Person`의 인스턴스이다.
 - `instanceof` 연산자를 이용해서 객체가 특정 생성자의 인스턴스가 맞는지를 확인할 수 있다.
 
-```
+```js
 person1 instanceof Person; //true
 ```
 
 - 객체 리터럴을 통해 생성된 객체는 `Object`의 인스턴스 이다
 
-```
+```js
 const obj = {};
 obj instanceof Object; // true
 ```
@@ -197,6 +197,6 @@ obj instanceof Object; // true
 
 - 생성자를 통해 만들어낸 객체의 프로토타입에는  생성자의 `prototype` 속성에 저장되어있는 객체가 자동으로 지정된다
 
-```
+```js
 Object.getPrototypeOf(person1) === Person.prototype; //true
 ```
