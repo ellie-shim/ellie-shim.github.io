@@ -1,3 +1,12 @@
+---
+layout: post
+title: JavaScript - 프로토타입 Prototype
+date: 2018-10-08 00:00:00 +0300
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: software.jpg # Add image post (optional)
+tags: [javascript, prototype, instance, 생성자, 프로토타입, 자바스크립트] # add tag
+---
+
 # 프로토타입(Prototype)
 
 - 수많은 객체가 공통으로 사용하는 속성과 메소드를 중복해서 저장하는 것은 낭비이다.
