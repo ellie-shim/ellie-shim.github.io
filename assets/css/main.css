@@ -447,13 +447,13 @@ template {
 }
 
 .highlight {
-  background-color: #f7f7f7;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
+  background-color: #f7f7f7;
   font-weight: 400;
   -webkit-border-radius: 3px;
           border-radius: 3px;
