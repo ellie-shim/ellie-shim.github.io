@@ -43,9 +43,9 @@ person1.introduce(); // 안녕하세요 제 이름은 길동이입니다.
 person2.introduce(); // 안녕하세요 제 이름은 둘리입니다.
 ```
 
-    - 이렇게 한 객체에서 다른 객체의 기능을 가져와 사용하는 것을 프로토타입 상속(Prototype inheritance)이라고 한다.
-    - `personPrototype`은 `person1`의 프로토타입이다.
-    - `person1` 객체는 `personPrototype` 객체를 상속받았다
+- 이렇게 한 객체에서 다른 객체의 기능을 가져와 사용하는 것을 프로토타입 상속(Prototype inheritance)이라고 한다.
+- `personPrototype`은 `person1`의 프로토타입이다.
+- `person1` 객체는 `personPrototype` 객체를 상속받았다
 
 1. `new` => 126번 줄
 
