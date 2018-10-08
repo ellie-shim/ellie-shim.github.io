@@ -2,7 +2,7 @@
 
 - 수많은 객체가 공통으로 사용하는 속성과 메소드를 중복해서 저장하는 것은 낭비이다.
 
-```
+```javascript
 function personFactory(name){
     return{
         name,
@@ -26,7 +26,7 @@ people[0].introduce() // '안녕하세요. 제 이름은 길동입니다.
 
 1. `Object.create` 함수
 
-```
+```javascript
 const personPrototype ={
     introduce : function(){
         return `안녕하세요. 제 이름은 ${this.name}입니다.`;
@@ -54,7 +54,7 @@ person2.introduce(); // 안녕하세요 제 이름은 둘리입니다.
 - `Object.getPrototypeOf`
 - 위 함수를 이용하여 프로토타입을 읽을 수 있다
 
-```
+```javascript
 const parent = {
     familyName : '심'
 }
@@ -71,7 +71,7 @@ Object.getPrototypeOf(child) === parent; //true
 - 위 함수를 이용하여 프로토타입을 쓸 수 있다.
     - (객체가 생성된 이후에 프로토타입을 변경하는 작업은 굉장히 느리므로 지양)
 
-```
+```javascript
 // 읽는 함수의 코드에 이어서
 const newParent ={
     familyName:'송'
@@ -83,7 +83,7 @@ Object.getPrototypeOf(child) === parent; //false
 
 - 객체 리터럴을 통해 생성된 객체의 프로토타입에는 자동으로 `Object.prototype`이 지정된다.
 
-```
+```javascript
 const obj = {};
 Object.getPrototypeOf(obj) === Object.prototype; // true
 ```
@@ -105,7 +105,7 @@ Object.getPrototypeOf(obj) === Object.prototype; // true
 
 ## 속성 가리기 Property Shadowing
 
-```
+```javascript
 const parent = {
     prop : 1
 }
@@ -122,7 +122,7 @@ child.prop; // 2
 
 ## 프로토타입을 간접적으로 변경하는 것은 불가능
 
-```
+```javascript
 const parent = {
     prop : '^^'
 }
@@ -145,7 +145,7 @@ child.prop // 'ㅠㅠ'
 
 - `new` 키워드를 이용하여 객체를 생성할 수 있다.
 
-```
+```javascript
 const obj = new Object();
 
 typeof Object; // 'function'
@@ -159,7 +159,7 @@ typeof Object; // 'function'
 
 - JS에는 `Object` 뿐만 아니라 내장된 많은 생성자들이 있고 프로그래머가 직접 생성자를 만들 수도 있다.
 
-```js
+```javascript
 // 생성자 정의
 function Person(name){
     this.name = name;
@@ -182,13 +182,13 @@ Person.name // 'name'
 - ` const person1 = new Person('길동'); ` : `person1`이 `Person`의 인스턴스이다.
 - `instanceof` 연산자를 이용해서 객체가 특정 생성자의 인스턴스가 맞는지를 확인할 수 있다.
 
-```js
+```javascript
 person1 instanceof Person; //true
 ```
 
 - 객체 리터럴을 통해 생성된 객체는 `Object`의 인스턴스 이다
 
-```js
+```javascript
 const obj = {};
 obj instanceof Object; // true
 ```
@@ -197,6 +197,6 @@ obj instanceof Object; // true
 
 - 생성자를 통해 만들어낸 객체의 프로토타입에는  생성자의 `prototype` 속성에 저장되어있는 객체가 자동으로 지정된다
 
-```js
+```javascript
 Object.getPrototypeOf(person1) === Person.prototype; //true
 ```
