@@ -6,6 +6,16 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+
+
+/* web font */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Noto+Serif+KR:300,400,700');
+/*
+font-family: 'Nanum Gothic Coding', monospace; // code
+font-family: 'Noto Serif KR', sans-serif; // paragraph
+
+*/
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -84,7 +94,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -140,7 +150,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -437,16 +447,14 @@ template {
 }
 
 .highlight {
-  background-color: #faf9f9;
+  background-color: #f7f7f7;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
-  color: #ce887b;
   font-weight: 400;
-  border: 1px solid #607D8B;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
@@ -773,7 +781,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noto Serif KR', sans-serif;
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
