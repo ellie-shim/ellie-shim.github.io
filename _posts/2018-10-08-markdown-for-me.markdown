@@ -21,6 +21,7 @@ tags: [마크다운, markdown] # add tag
 ## 2번 제목
 ### 3번 제목
 #### 4번 제목
+
 -----
 
 ```xml
@@ -34,6 +35,7 @@ tags: [마크다운, markdown] # add tag
 >
 > > 인용 안의 인용
 > > ## 인용 안의 제목
+
 -----
 
 ```xml
@@ -53,6 +55,7 @@ tags: [마크다운, markdown] # add tag
   + 띄어쓰기 두칸으로
   + Depth
     * 가능
+
 -----
 
 ```xml
@@ -68,6 +71,7 @@ tags: [마크다운, markdown] # add tag
 1. 알아서 카운팅
   1. 마찬가지로
   1. Depth
+
 -----
 
 ```xml
@@ -77,6 +81,7 @@ tags: [마크다운, markdown] # add tag
 
 강조 문법 *기울기*
 두가지 _방법_
+
 -----
 
 ```xml
@@ -86,6 +91,7 @@ tags: [마크다운, markdown] # add tag
 
 강조 문법 **굵게**
 두가지 __방법의 볼드__
+
 -----
 
 ```xml
@@ -93,6 +99,7 @@ tags: [마크다운, markdown] # add tag
 ```
 
 [링크도 가능](https://bbgrams.github.io)
+
 -----
 
 ```xml
@@ -101,6 +108,7 @@ tags: [마크다운, markdown] # add tag
 ```
 
 ![비비](https://bbgrams.github.io/assets/img/bb-pic.png)
+
 -----
 
 ```xml
