@@ -31,7 +31,7 @@ author:
     # spotify:         <user>/<number>
     # soundcloud:      <username>
     # lastfm:          <username>
-    # instagram:       <username>
+    instagram: bb__gram
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
@@ -57,7 +57,7 @@ author:
     # stumbleupon:     <username>
     # paypal:          <username>
     email: mailto:sovv12@gmail.com
-    rss: https://isme2n.github.io/feed.xml
+    # rss: https://isme2n.github.io/feed.xml
 
 # Another author
 mdo:
