@@ -2,7 +2,7 @@
 
 # -----------------------------------------------------------------------------
 #  User configuration
-title: Aiden
+title: soyoung
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
@@ -23,7 +23,7 @@ description: >
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name: aiden min
-  email: zoqozqz@gmail.com
+  email: sovv12@gmail.com
 
 # Fallback image and color
 image: /assets/img/nap.jpg
