@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Study-siots
-slug: study-siots
+slug: siots
 menu: true
 submenu: false
 order: 9
