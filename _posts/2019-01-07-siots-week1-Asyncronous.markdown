@@ -7,7 +7,7 @@ tags: topic
 comments: true
 ---
 
-## 1주차 TOPIC - 비동기 프로그래밍
+# 1주차 TOPIC - 비동기 프로그래밍
 
 [비동기 프로그래밍](https://helloworldjavascript.net/pages/285-async.html)
 
@@ -116,4 +116,68 @@ axios
       .map(issue => issue.title)
       .forEach((title, index) => console.log(index + 1 + " : " + title));
   });
+```
+
+### 비동기 함수 (Async Function)
+
+ES2017에 도입됐다.
+
+함수 앞에 `async` 키워드를 붙이면 이 함수는 **비동기 함수**가 된다.
+
+비동기 함수는 **항상 Promise 객체를 반환한다.** 이 Promise의 결과값은 비동기 함수 내에서 무엇을 반환하느냐에 따라 결정되며, **`then` 메소드와 똑같은 방식으로 동작한다.**
+
+#### await
+
+- 비동기함수 내에서 `await` 키워드를 사용할 수 있다.
+- **`await` 뒤에 오는 Promise가 결과값을 가질 때까지 함수를 잠시 멈추고, Promise 통에 값이 채워지면 함수를 다시 실행하여 값을 반환한다** (비동기식으로 작동하기 때문에 브라우저는 Promise가 완료될 때까지 다른 작업을 처리할 수 있다.)
+- `await`는 연산자이기도 하다.
+- `await`의 값을 변수에 저장할 수 있다.
+  ```javascript
+  const str = await delay(3000, "hello");
+  // 3초 뒤에 hello라는 값이 str에 저장된다.
+  ```
+- `await` 연산의 결과값은 뒤에 오는 Promise 객체의 결과값이 된다.
+- `await`는 `for`, `if`와 같은 제어구문에서도 사용할 수 있다.
+- `then` 메소드를 사용할 때 보다 **복잡한 비동기 데이터 흐름을 아주 쉽게 표현할 수 있다**
+
+가장 큰 장점은 **동기식 코드를 짜듯이 비동기식 코드를 짤 수 있다**는 것이다.
+
+```javascript
+// Promise 객체를 반환하는 함수.
+function delay(ms) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      console.log(`${ms} 밀리초가 지났습니다.`);
+      resolve();
+    }, ms);
+  });
+}
+
+async function main() {
+  await delay(1000); // 1초 뒤에 결과값 반환
+  await delay(2000); // 2초 뒤에 결과값 반환
+  const result = await Promise.resolve("끝");
+  console.log(result);
+}
+
+main();
+```
+
+```javascript
+// 비동기 함수
+async function func1() {
+  //...
+}
+
+// 비동기 화살표 함수
+const func2 = async () => {
+  //...
+};
+
+// 비동기 메소드
+class MyClass {
+  async myMethod() {
+    //...
+  }
+}
 ```
