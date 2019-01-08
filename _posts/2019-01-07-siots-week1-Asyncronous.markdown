@@ -152,6 +152,8 @@ delay(1000, "hello") // 1초 뒤에 'hello' 가 채워진 통이 반환된다
 
 ![promise 처리 흐름-출처:MDN](https://bbgrams.github.io/assets/img/docs/promise-flow.svg)
 
+`promise 처리 흐름(출처 : mdn)`
+
 #### HTTP 통신을 할 때
 
 ```javascript
