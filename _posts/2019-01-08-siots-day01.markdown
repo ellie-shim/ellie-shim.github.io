@@ -200,7 +200,7 @@ JavaScript에는 7가지의 타입이 존재한다.
 
 #### 원시타입(Primitive Type)과 참조타입(Reference Type)
 
-원시타입 : 값을 그대로 할당 - Number, String, Boolean, null, undefined
+원시타입 : 값을 그대로 할당 - Number, String, Boolean, null, undefined, Symbol
 
 참조타입 : 값이 저장된 주소값을 할당(참조) - Object(Array, Function, RegExp)
 
