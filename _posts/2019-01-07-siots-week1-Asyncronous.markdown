@@ -150,7 +150,7 @@ delay(1000, "hello") // 1초 뒤에 'hello' 가 채워진 통이 반환된다
 1. 2초 뒤에 'hello world'가 채워진 값이 반환된다.
 1. 'hello world'가 콘솔창에 출력된다.
 
-![promise 처리 흐름-출처:MDN](https://bbgrams.github.io/assets/img/promise-flow.svg)
+![promise 처리 흐름-출처:MDN](https://bbgrams.github.io/assets/img/docs/promise-flow.svg)
 
 #### HTTP 통신을 할 때
 
