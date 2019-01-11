@@ -20,17 +20,17 @@ comments: true
 
 [큐, 스택](https://helloworldjavascript.net/pages/282-data-structures.html)
 
-#### Stack
+#### 스택 Stack
 
 배열로 되어있는 자료구조
 
-LIFO(Last In First Out) - 후입선출
-
-스택은 리포다.
+LIFO(Last In First Out) - 후입선출 => 스택은 리포다.
 
 웹브라우저에서 history를 읽을 때 사용된다.
 
 DFS에서 사용됨.
+
+**콜스택(호출스택)** 자바스크립트 엔진은 **함수 호출과 관련된 정보를 콜스택**에서 관리한다.
 
 - 번외
   1. 배열에 아무것도 없을 때 top = -1
@@ -38,7 +38,7 @@ DFS에서 사용됨.
   1. 배열에 아이템이 2개 있을 때 top = 1
   1. peek()의 값은 top과 같다.
 
-#### Queue
+#### 큐 Queue
 
 위아래가 뚫려있는 구조
 
@@ -58,7 +58,7 @@ BFS에서 사용됨.
 
 순서대로 처리해야하는 작업을 임시로 저장해두는 버퍼로서 많이 사용된다.(작업 큐)
 
-## 심화1 강의
+## 심화1
 
 [심화 1](https://helloworldjavascript.net/pages/220-value-in-depth.html)
 

@@ -96,7 +96,7 @@ console.log("Hello Again");
 
 ### 1. 콜백(Callback)
 
-다른 함수의 인수로 넘기는 함수
+다른 함수의 인수로 넘겨지는 함수
 
 복잡한 비동기 작업을 할 수는 있지만 코드가 많이 복잡해진다 => 콜백 안의 콜백 안의 콜백 안의 .... 콜백 지옥(callback hell)
 
@@ -230,6 +230,10 @@ class MyClass {
   }
 }
 ```
+
+## 참고 링크
+
+[generator와 promise로 비동기 작업하기, co라이브러리](https://meetup.toast.com/posts/73)
 
 ## 면접 문제
 

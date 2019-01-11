@@ -7,7 +7,7 @@ tags: interview
 comments: true
 ---
 
-### 면접 질문 - 1일차
+### 면접 질문 - 2일차
 
 ---
 
