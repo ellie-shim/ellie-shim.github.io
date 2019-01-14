@@ -1,0 +1,42 @@
+---
+layout: post
+title: "참고 링크 정리"
+subtitle: "link"
+categories: tip
+tags: tip
+comments: true
+---
+
+## 시옷즈
+
+[시옷즈 깃랩](https://gitlab.com/siots-study/topics/wikis/home)
+
+[시옷즈 구글시트](https://docs.google.com/spreadsheets/d/1oQlU4FIB4QYy7QBGl4lEi57m6EM34iD917ghNPlMOAU/edit?usp=sharing)
+
+[시옷즈 트렐로](https://trello.com/b/OA0kDwHH/siots-study)
+
+## 프로토타입
+
+[쉽게 이해하는 자바스크립트 프로토타입 체인](https://meetup.toast.com/posts/104)
+
+## 모듈
+
+[자바스크립트 모듈, 모듈 포맷, 모듈 로더와 모듈 번들러에 대한 10분 입문서](https://github.com/codepink/codepink.github.com/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%AA%A8%EB%93%88,-%EB%AA%A8%EB%93%88-%ED%8F%AC%EB%A7%B7,-%EB%AA%A8%EB%93%88-%EB%A1%9C%EB%8D%94%EC%99%80-%EB%AA%A8%EB%93%88-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%97%90-%EB%8C%80%ED%95%9C-10%EB%B6%84-%EC%9E%85%EB%AC%B8%EC%84%9C)
+
+## 폴리필
+
+[폴리필](http://webdir.tistory.com/328)
+
+## fetch API
+
+[내가 fetch API를 쓰지 못했던 이유](https://medium.com/little-big-programming/%EB%82%B4%EA%B0%80-fetch-api%EB%A5%BC-%EC%93%B0%EC%A7%80-%EB%AA%BB%ED%96%88%EB%8D%98-%EC%9D%B4%EC%9C%A0-3c23f0ec6b82)
+
+[정말 멋진 fetch API](http://hacks.mozilla.or.kr/2015/05/this-api-is-so-fetching/)
+
+## 크로스 브라우징
+
+[크로스 브라우징 이슈](https://github.com/nhnent/fe.javascript/wiki/%ED%81%AC%EB%A1%9C%EC%8A%A4%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95-%EC%9D%B4%EC%8A%88)
+
+## FDS 교재
+
+[Node.js + HTTP](https://fds11.github.io/fds-nodejs-http/)
