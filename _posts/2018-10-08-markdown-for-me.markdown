@@ -128,3 +128,7 @@ comments: true
 - css
 - html => xml
 - markdown
+
+### 코드블럭 구문강조 지원언어 참고
+
+[구문 강조를 위한 펜스 코드 블럭(fenced code block)](http://haroopress.com/post/fenced-code-block/)
