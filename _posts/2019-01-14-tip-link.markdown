@@ -44,3 +44,9 @@ comments: true
 ## JSONP
 
 [JSONP 알고 쓰자](http://kingbbode.tistory.com/26)
+
+## blog
+
+[흑묘](http://cat.hubweb.net/board_s1h4c2)
+
+[흉내쟁이-WEBDIR](http://webdir.tistory.com/)

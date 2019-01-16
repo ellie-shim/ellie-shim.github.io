@@ -13,7 +13,7 @@ comments: true
 
 ### 1. Axios ?
 
-**Promise 기반**의 HTTP 통신 라이브러리
+**Promise 기반**의 HTTP 통신 라이브러리 => `axios`의 리턴 값은 `Promise`
 
 상대적으로 다른 HTTP 통신 라이브러리들에 비해 문서화가 잘 되어있고 API가 다양하다.
 
@@ -84,3 +84,15 @@ require(‘es6-promise’).polyfill();
 `axios`는 반환된 응답을 `JSON`으로 변환시켜 주고, 자바스크립트에서 `data` 객체로 반환된다. => 반환된 데이터 구조 그대로 사용이 가능하다.
 
 ---
+
+## 2. fetch API
+
+## 3. Polyfill
+
+### 1. polyfill ?
+
+개발자가 특정 기능이 지원되지 않는 브라우저를 위해 사용할 수 있는 코드 조각이나 플러그인을 말한다. 폴리필은 보통 HTML5 및 CSS3와 오래된 브라우저 사이의 간격을 메꾸는 역할을 담당한다.
+
+#### 참고 링크
+
+[Modernizr-HTML5 Cross Browser Polyfills : 개발되어있는 폴리필을 모아놓은 페이지](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
