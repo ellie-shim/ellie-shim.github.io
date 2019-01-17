@@ -85,6 +85,12 @@ require(‘es6-promise’).polyfill();
 
 ---
 
+> jsonp, CORS, ...아롸보좌
+
+#### 참고 링크
+
+[axios-ajax 비동기 작업 처리](https://beomy.tistory.com/36)
+
 ## 2. fetch API
 
 ```md
@@ -112,17 +118,25 @@ XHR을 좀 더 유연하게 사용할 수 있는 것이 `fetch API`
 
 > Axios는 XHR을 사용하는데, `Service Worker`등의 최신 기술이 XHR을 지원하지 않으므로 Service worker를 사용할 예정이라면 Fetch API를 사용해야 함
 
+---
+
 #### 참고 링크
 
 [MDN-fetch API](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API)
 
+[MDN-Using FetchAPI](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Fetch%EC%9D%98_%EC%82%AC%EC%9A%A9%EB%B2%95)
+
 [fetch-polyfill](https://github.com/github/fetch)
+
+[fetchAPI와 async-await](https://developers.google.com/web/fundamentals/primers/async-functions?hl=ko)
 
 ## 3. Polyfill
 
 ### 1. polyfill ?
 
 개발자가 특정 기능이 지원되지 않는 브라우저를 위해 사용할 수 있는 코드 조각이나 플러그인을 말한다. 폴리필은 보통 HTML5 및 CSS3와 오래된 브라우저 사이의 간격을 메꾸는 역할을 담당한다.
+
+---
 
 #### 참고 링크
 
