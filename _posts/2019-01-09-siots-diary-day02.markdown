@@ -7,10 +7,6 @@ tags: diary
 comments: true
 ---
 
-### 스터디일기 - 2일차
-
----
-
 #### 오늘의 일정
 
 1. 엑서시즘 풀이 - custom set

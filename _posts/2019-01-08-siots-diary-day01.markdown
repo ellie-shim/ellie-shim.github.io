@@ -7,10 +7,6 @@ tags: diary
 comments: true
 ---
 
-### 스터디일기 - 1일차
-
----
-
 #### 오늘의 일정
 
 1. 알고리즘 part 1

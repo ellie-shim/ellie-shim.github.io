@@ -7,10 +7,6 @@ tags: diary
 comments: true
 ---
 
-### 스터디일기 - 3일차
-
----
-
 #### 오늘의 일정
 
 1. Linked List
