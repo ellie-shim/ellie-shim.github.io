@@ -7,10 +7,6 @@ tags: interview
 comments: true
 ---
 
-### 면접 질문 - 1일차
-
----
-
 #### 심화 1
 
 - 3.1 값 더 알아보기

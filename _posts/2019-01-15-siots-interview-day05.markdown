@@ -7,10 +7,6 @@ tags: interview
 comments: true
 ---
 
-### 면접 질문 - 5일차
-
----
-
 #### DOM
 
 ---

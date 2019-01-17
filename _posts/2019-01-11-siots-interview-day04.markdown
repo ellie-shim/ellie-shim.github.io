@@ -7,10 +7,6 @@ tags: interview
 comments: true
 ---
 
-### 면접 질문 - 4일차
-
----
-
 #### 객체
 
 1. 객체

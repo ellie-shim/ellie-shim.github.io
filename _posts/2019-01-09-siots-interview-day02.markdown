@@ -7,10 +7,6 @@ tags: interview
 comments: true
 ---
 
-### 면접 질문 - 2일차
-
----
-
 #### 심화 2
 
 - Iterable
