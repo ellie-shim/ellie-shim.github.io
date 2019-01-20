@@ -93,6 +93,8 @@ require(‘es6-promise’).polyfill();
 
 ## 2. fetch API
 
+[FetchAPI와 XHR의 차이점이 모냐??](https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest)
+
 ```md
 #### 자꾸 헷갈려
 
@@ -102,7 +104,11 @@ require(‘es6-promise’).polyfill();
 
 하지만 IE가 판치던 그 옛날, IE에서 AJAX 요청을 보내기가 까다로워서 `jquery AJAX`나 `axios`, `superagent`같은 라이브러리를 사용했다.
 
-XHR을 좀 더 유연하게 사용할 수 있는 것이 `fetch API`
+XHR을 좀 더 유연하게 사용할 수 있는 것이 `fetch API`?
+
+fetch와 XHR 둘 다 서버에 ajax 요청을 할 수 있다.
+fetch 에는 XHR에서 사용할 수 없는 몇가지 추가 기능이 있다.
+fetch폴리필에서
 ```
 
 - ajax를 구현하는 여러가지 방법 중 최신 방법이 fetchAPI이다
@@ -117,6 +123,34 @@ XHR을 좀 더 유연하게 사용할 수 있는 것이 `fetch API`
 * `fetch()`는 `Promise`를 반환한다.
 
 > Axios는 XHR을 사용하는데, `Service Worker`등의 최신 기술이 XHR을 지원하지 않으므로 Service worker를 사용할 예정이라면 Fetch API를 사용해야 함
+
+### 1. Service Worker
+
+[서비스 워커가 무엇이죠](https://medium.com/@Dongmin_Jang/frontend-service-worker-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9B%8C%EC%BB%A4%EA%B0%80-%EB%AC%B4%EC%97%87-2dab5d60f611)
+
+- 오프라인 상황에서 브라우저가 뭘 해야될지 개발자가 제어할 수 있도록 한 것.
+
+- 브라우저가 백그라운드에서 실행하는 스크립트로 웹페이지와는 별개로 작동한다.
+
+- **주기적 백그라운드 동기화** 가능 : 오프라인으로 인해서 특정 처리가 완료되지 못했을 때, 온라인 상태가 되면 자동으로 처리가 완료되는 것(채팅)
+- **푸시알림 가능** : sns에 올린 글에 대한 알림이 브라우저 알림으로 뜨는 것(페이스북)
+
+> ajax에선 뭐가 안된다고 했었죠 ?
+
+#### 주의할 점
+
+1. 보안상의 이유로 https를 통해서만 실행된다. => 개발중에 `localhost`를 이용해서 서비스워커를 사용할 수 있지만 사이트에 배포하려면 서버에 https 설정을 해야한다.
+1. 표준이 아니다
+1. Promise 사용법을 알아야한다.
+1. 모든 브라우저를 지원하지 않는다.
+
+#### 참고 링크
+
+[Service Worker - MDN](https://developer.mozilla.org/ko/docs/Web/API/Service_Worker_API)
+
+[Service Worker 소개 - 구글](https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ko)
+
+[Service Worker 지원 브라우저](https://jakearchibald.github.io/isserviceworkerready/)
 
 ---
 
