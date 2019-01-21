@@ -96,7 +96,7 @@ require(‘es6-promise’).polyfill();
 [FetchAPI와 XHR의 차이점이 모냐??](https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest)
 
 ```md
-#### 자꾸 헷갈려
+#### 정말 정확히 모르겠음........
 
 웹페이지 전체를 리로드하지 않고 일부분만을 리로드하고 비동기식으로 데이터를 불러와 작업하는 `XMLHttpRequest` 객체
 
@@ -107,11 +107,13 @@ require(‘es6-promise’).polyfill();
 XHR을 좀 더 유연하게 사용할 수 있는 것이 `fetch API`?
 
 fetch와 XHR 둘 다 서버에 ajax 요청을 할 수 있다.
+
 fetch 에는 XHR에서 사용할 수 없는 몇가지 추가 기능이 있다.
-fetch폴리필에서
 ```
 
 - ajax를 구현하는 여러가지 방법 중 최신 방법이 fetchAPI이다
+
+- fetch는 자바스크립트로 구현되기때문에(?) 따로 API 설치를 할 필요가 없다고 합니다.
 
 * 비교적 최근에 도입되어 `IE` 및 구형 안드로이드 브라우저(4.x)는 지원하지 않음.
 
@@ -151,6 +153,52 @@ fetch폴리필에서
 [Service Worker 소개 - 구글](https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ko)
 
 [Service Worker 지원 브라우저](https://jakearchibald.github.io/isserviceworkerready/)
+
+### 2. 한번 써볼까요
+
+fetch 많이 찾아봤는데 async await을 쓴 예제가 별로 없더군요...
+
+그런김에 우리는 `Promise`로 `fetch`를 써봅시다.
+
+#### Promise.....사용법..복습..
+
+1. `Promise`생성자는 콜백을 인수로 받는다. 첫번째 인수로 `resolve` 가 들어오는데, 콜백 안에서 `resolve`를 호출하면 **`resolve`에 인수로 준 값이 곧 Promise 객체의 결과값이 된다.**
+
+1. 두번째 인수로는 `reject`가 들어온다 => 비동기 작업에서 에러가 발생했을 때 호출하는 함수
+
+1. `then` 메소드를 통해 콜백을 등록해서, 작업이 끝났을 때 결과값을 가지고 추가 작업을 할 수 있다.
+
+```javascript
+function delay(ms, value) {
+  return new Promise((resolve, reject) => {
+    setImeout(() => {
+      resolve(value); //resolve에 인수로 준 값이 promise 객체의 결과값이 된다.
+    }, ms);
+  });
+}
+
+delay(1000, "hello")
+  .then(str => {
+    // 위의 반환값이 then의 인수(str)에 들어간다
+    return delay(2000, str + "world"); // str에 위의 반환값('hello')가 들어간 상태로 다시 함수가 실행된다. 이때의 결과값('hello world')이 채워진 통이 반환되고
+  })
+  .then(str => {
+    // 위에서 반환된 값이 then의 인수(str)에 들어간다
+    console.log(str);
+  });
+```
+
+#### create-react-app
+
+```
+npm init react-app my-app
+```
+
+#### dummy data
+
+```
+https://jsonplaceholder.typicode.com/users
+```
 
 ---
 
