@@ -166,6 +166,15 @@ fetch("https://jsonplaceholder.typicode.com/posts")
   .then(json => console.log(json));
 ```
 
+###
+
+작성중에 참고하던 링크
+https://github.com/github/fetch
+
+https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Fetch%EC%9D%98_%EC%82%AC%EC%9A%A9%EB%B2%95
+
+https://github.com/typicode/jsonplaceholder#how-to
+
 ### 3. 한번 써볼까요
 
 fetch 많이 찾아봤는데 async await을 쓴 예제가 별로 없더군요...
