@@ -83,15 +83,122 @@ require(‘es6-promise’).polyfill();
 
 `axios`는 반환된 응답을 `JSON`으로 변환시켜 주고, 자바스크립트에서 `data` 객체로 반환된다. => 반환된 데이터 구조 그대로 사용이 가능하다. 우리가 그동안 분해대입을 사용해서 쉽게 코딩 할 수 있었던 것은 `axios`의 편리한 기능이었습니다!
 
----
+#### GET
 
-> jsonp, CORS, ...아롸보좌
+```js
+const axios = require("axios");
+
+function ax() {
+  axios
+    .get("https://jsonplaceholder.typicode.com/posts/1")
+    .then(res => console.log(res));
+}
+
+async function ax() {
+  const { data } = await axios.get(
+    "https://jsonplaceholder.typicode.com/posts/1"
+  );
+  console.log(data);
+
+  const {
+    data: { title }
+  } = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+  console.log(title);
+}
+```
+
+`res`에 응답객체가 들어옵니다. repl에서 응답 객체를 확인해보아요
+
+#### POST
+
+```js
+const axios = require("axios");
+
+function ap() {
+  axios
+    .post("https://jsonplaceholder.typicode.com/posts", {
+      firstName: "Fred",
+      lastName: "Flintstone"
+    })
+    .then(console.log(res));
+}
+```
+
+#### 여러 요청 한번에 받기
+
+```js
+async function post1() {
+  const {
+    data: { title }
+  } = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+  return title;
+}
+
+async function post2() {
+  const {
+    data: { title }
+  } = await axios.get("https://jsonplaceholder.typicode.com/posts/2");
+  return title;
+}
+
+axios.all([post1(), post2()]).then(
+  axios.spread(function(tit1, tit2) {
+    console.log(tit1);
+    console.log(tit2);
+  })
+);
+```
+
+axios.all을 하면 인수로 들어간 요청의 결과값이 담긴 promise가 반환됩니다.
+이 promise에 then 콜백을 붙일 수 있습니다.
+
+---
 
 #### 참고 링크
 
+[Axios 공식문서-Github(영문)](https://github.com/axios/axios#cancellation)
+
 [axios-ajax 비동기 작업 처리](https://beomy.tistory.com/36)
 
+---
+
+### 6. 요청 취소
+
+요청의 수가 많은 SPA에선 요청 중에 사용자가 페이지를 전환하면 요청했던 것을 취소해주어야 합니다.
+
+API 요청 취소는 간단합니다. `XHR`에서 제공하는 `abort` 메소드를 호출하는 것으로 취소시킬 수 있습니다. 또는 라이브러리에서 제공하는 메소드를 사용하면 됩니다.
+
+axios에서는 `cancel token`을 이용해서 요청을 취소할 수 있습니다.
+
+[Axios에서 요청 취소하는 방법](https://github.com/axios/axios#cancellation)
+
+---
+
+### 7. 동일 출처 정책 문제 해결
+
+1. 서버측에서 CORS 설정
+2. JSONP(JSON with Padding) 이용
+
+   - 웹브라우저에서 css나 js 같은 리소스 파일들은 동일출처 정책에 영향을 받지 않고 로딩이 가능합니다. 이런 점을 응용하여 외부서버에서 js파일을 읽듯이 요청한 결과를 json으로 바꿔주는 편법적인 방법입니다. 단점은 리소스 파일을 `GET` 메소드로 읽어오기 때문에 `GET` 방식의 API만 요청이 가능합니다.
+
+   - 또 JSONP를 이용한 방법은 서버측의 도움도 필요합니다.
+   - [자세한 실행방법은 여기를 참고하세요-Jsonp 알고 쓰자](https://kingbbode.tistory.com/26)
+
+3. CORS 요청 핸들링하기.
+
+   - 모든 요청의 응답에 아래처럼 header를 추가하여 처리할 수 있다.
+
+   ```js
+   axios.get('https://a.4cdn.org/a/threads.json', {
+     headers: {
+       'Access-Control-Allow-Origin': '*',
+     }
+   }
+   ```
+
 ## 2. fetch API
+
+[fetch 스펙-영문](https://fetch.spec.whatwg.org/#concept-bodyinit-extract)
 
 [FetchAPI와 XHR의 차이점이 모냐??](https://stackoverflow.com/questions/35549547/what-is-the-difference-between-the-fetch-api-and-xmlhttprequest)
 
@@ -218,13 +325,13 @@ fetch로 get 요청을 보내면 `Response`를 반환합니다. Response안에�
 
 `res.text()`, `res.json()` 모두 response 값의 데이터 부분을 빼오는 역할을 합니다.
 
-`text()`가 표준이고 `json()`은 좀 더 높은 버전에서 호환되는 것 같습니다??
-
 `text()` : 응답 텍스트를 문자열로 표시
 
 `json()` : 응답 텍스트의 결과를 산출한다.
 
 text와 json둘다 mdn에 적혀있는데 정확히 무슨 차이인지 모르겠어요 이건 좀 더 알아봐야겠어요! => [여기에있네요 fetch 블로그](https://github.github.io/fetch/)
+
+근데 둘 다 똑같이 작동하는디..?;;;;;;;큼큼
 
 #### POST, PUT, PATCH
 
@@ -281,6 +388,8 @@ https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Fetch%EC%9D%98_%EC%82%AC
 
 https://github.com/typicode/jsonplaceholder#how-to
 
+---
+
 ### 3. 한번 써볼까요
 
 #### create-react-app
@@ -301,6 +410,24 @@ Response의 body에 있는 텍스트를 JSON으로 바꾸어줍니다.
 
 ---
 
+### 4. 동일 출처 정책 해결
+
+요청 객체의 `mode` 속성을 사용함으로써 CORS 설정을 해줄 수 있습니다.
+
+`mode` 속성에 올 수 있는 값으로는 아래의 세가지가 있습니다.
+
+- `same-origin` : 다른 오리진(origin)에 있는 자원을 요청하면 에러가 납니다. 요청이 항상 같은 오리진에서 일어나도록 보장하기 위해 이 mode를 사용할 수 있습니다.
+- `no-cors`(디폴트) : CDN에서 스크립트를 불러오거나, 다른 도메인 서버에서 이미지를 불러오는 등, 웹 플랫폼이 기본적으로 하는 일을 나타냅니다. `HEAD`, `GET`, `POST` 이외의 명령을 금지합니다.
+  > 어려워서 못알아듣겠는 추가 설명 :::: 둘째로, 만약 ServiceWorkers가 이런 요청(request) 을 가로채게 되면, ServiceWorkers 는 간단한 헤더(simple-header) 이외의 어떤 헤더 정보도 추가하거나 수정할 수 없습니다. 셋째로, JavaScript 는 결과로 전달되는 Response 객체의 어떤 속성에도 접근할 수 없습니다. 이렇게 함으로써 ServiceWorkers 는 웹의 의미성(semantics) 에 영향 주지 않음을 보장하면서, 도메인 사이에서의 데이터 유출에 의한 시큐리티와 프라이버시 문제를 방지합니다.
+- `cors` : 다른 업체들이 제공하는 다양한 API들에 접근할때 필요한 크로스-오리진(cross-origin) 요청을 위해 주로 사용하게 될 mode입니다. `header`정보의 경우 제한된 일부 정보만 볼 수 있고, `body` 정보는 완전히 공개됩니다.
+
+```js
+fetch(url, { mode: "same-origin" })
+  .then(res => console.log(res.json())
+```
+
+---
+
 #### 참고 링크
 
 [MDN-fetch API](https://developer.mozilla.org/ko/docs/Web/API/Fetch_API)
@@ -313,13 +440,23 @@ Response의 body에 있는 텍스트를 JSON으로 바꾸어줍니다.
 
 [fetchAPI-Medium](https://medium.com/@kkak10/javascript-fetch-api-e26bfeaad9b6)
 
+---
+
+## 2.5 요청 취소
+
+SPA에선 요청 중에 사용자가 페이지를 전환하면 요청했던 것을 취소해주어야 한다.
+
+API 요청 취소는 간단하다. `XHR`에서 제공하는 `abort` 메소드를 호출하는 것으로 취소시킬 수 있다. 또는 라이브러리에서 제공하는 메소드를 사용하면 된다.
+
+하.지.만.
+
+fetchAPI는 요청을 취소할 수 있는 기능을 제공하지 않는다.
+
+[Axios에서 요청 취소하는 방법](https://github.com/axios/axios#cancellation)
+
 ## 3. Polyfill
 
-### 1. polyfill ?
-
 개발자가 특정 기능이 지원되지 않는 브라우저를 위해 사용할 수 있는 코드 조각이나 플러그인을 말한다. 폴리필은 보통 HTML5 및 CSS3와 오래된 브라우저 사이의 간격을 메꾸는 역할을 담당한다.
-
----
 
 #### 참고 링크
 
