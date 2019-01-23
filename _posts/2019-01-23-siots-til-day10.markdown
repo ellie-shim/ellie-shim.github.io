@@ -271,3 +271,31 @@ Hypertext Transfer Protocol Secure
 - 공개키 암포 방식은 알고리즘 계산 방식이 느린 경향이 있다 => SSL을 사용하는 HTTPS가 HTTP보다 느리다는 인식이 있다.?
 
 ### 3. SSL 통신방법
+
+## 5. HTTPS가 HTTP보다 좋은 점
+
+1. HTTPS는 HTTP보다 빠르다.(개빠름;;)
+
+2. 구글 랭킹 노출에 도움이 된다. (HTTPS를 쓰면 순위가 올라간다.)
+
+3. ATS(IOS App Transport Security)는 HTTP를 차단
+
+4. PWA(Progressive Web Apps)에는 https 만 가능
+
+5. 지리정보, 자동기입 등의 모든 API는 https가 필요함
+
+6. https는 도입 비용이 비싸지않음
+
+7. 안전하다.
+
+# 6. HTTP Cache
+
+## 1. cache가 만들어진 배경
+
+## 면접문제
+
+1. CORS에 대해 설명할 수 있나?
+
+```
+동일 출처 정책으로 인해 다른 도메인에 요청을 할 수 없는 경우를 위한 정책이고 외부 도메인 서버와 통신하기 위한 방식이다. 요청을 받은 웹서버가 허용할 경우에는 다른 도메인의 웹페이지 스크립트에서도 자원을 주고받을 수 있게 해준다.
+```
