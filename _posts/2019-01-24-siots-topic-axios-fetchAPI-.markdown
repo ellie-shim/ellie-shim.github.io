@@ -7,7 +7,7 @@ tags: topic
 comments: true
 ---
 
-# 3주차 TOPIC - Axios, fetch API
+# 3주차 TOPIC - Axios, fetch API, Polyfill
 
 ## 1. Axios
 
@@ -158,28 +158,13 @@ fetch에는 XHR에서 사용할 수 없는 몇가지 추가 기능이 있습니�
 
 [Service Worker 지원 브라우저](https://jakearchibald.github.io/isserviceworkerready/)
 
+---
+
 ### 2. fetchAPI의 기본 사용법
 
-```js
-fetch("https://jsonplaceholder.typicode.com/posts")
-  .then(res => res.json())
-  .then(json => console.log(json));
-```
+많이 찾아봤는데 예제들이 다들 promise를 쓰더라구요
 
-###
-
-작성중에 참고하던 링크
-https://github.com/github/fetch
-
-https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Fetch%EC%9D%98_%EC%82%AC%EC%9A%A9%EB%B2%95
-
-https://github.com/typicode/jsonplaceholder#how-to
-
-### 3. 한번 써볼까요
-
-fetch 많이 찾아봤는데 async await을 쓴 예제가 별로 없더군요...
-
-그런김에 우리는 `Promise`로 `fetch`를 써봅시다.
+그런김에 우리도 `Promise`로 `fetch`를 써봅시다.
 
 #### Promise.....사용법..복습..
 
@@ -208,6 +193,91 @@ delay(1000, "hello")
     console.log(str);
   });
 ```
+
+#### Get
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then(res => res.json())
+  .then(json => console.log(json));
+```
+
+```js
+async function logFetch(url) {
+  try {
+    const res = await fetch(url);
+    console.log(await res);
+    // console.log(await res.text())
+  } catch (err) {
+    console.log("fetch failed", err);
+  }
+}
+```
+
+fetch로 get 요청을 보내면 `Response`를 반환합니다. Response안에는...괴상한..것들이..들어있어요 알고싶지 않은것들..
+
+`res.text()`, `res.json()` 모두 response 값의 데이터 부분을 빼오는 역할을 합니다.
+
+`text()`가 표준이고 `json()`은 좀 더 높은 버전에서 호환되는 것 같습니다??
+
+text와 json둘다 mdn에 적혀있는데 정확히 무슨 차이인지 모르겠어요 이건 좀 더 알아봐야겠어요! => [여기에있네요 fetch 블로그](https://github.github.io/fetch/)
+
+#### POST, PUT, PATCH
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "POST", // 'PUT', 'PATCH'도 동일
+  body: JSON.stringify({
+    title: "foo",
+    body: "bar",
+    userId: 1
+  }),
+  headers: {
+    "Content-type": "application/json; charset = UTF-8"
+  }
+})
+  .then(response => response.json())
+  .then(json => console.log(json));
+
+// 반환 되는 값
+/*
+{
+  id: 101,
+  title: 'foo',
+  body: 'bar',
+  userId: 1
+}
+*/
+```
+
+#### DELETE
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+  method: "DELETE"
+});
+```
+
+> `post`,`put`, `patch`, `delete`가 성공적이면 서버는 200대의 성공이라는 응답을 줄 것입니다. 하지만 jsonplaceholder는 더미 데이터 사이트이기 때문에, 사이트에서는 확인할 수 없어용
+
+#### Filtering
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
+  .then(response => response.json())
+  .then(json => console.log(json));
+```
+
+###
+
+작성중에 참고하던 링크
+https://github.com/github/fetch
+
+https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Fetch%EC%9D%98_%EC%82%AC%EC%9A%A9%EB%B2%95
+
+https://github.com/typicode/jsonplaceholder#how-to
+
+### 3. 한번 써볼까요
 
 #### create-react-app
 
