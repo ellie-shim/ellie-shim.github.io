@@ -105,6 +105,17 @@ async function ax() {
   } = await axios.get("https://jsonplaceholder.typicode.com/posts/1");
   console.log(title);
 }
+
+// params를 이용한 방법
+function ax() {
+  axios
+    .get("https://jsonplaceholder.typicode.com/posts", {
+      params: {
+        userId: 1
+      }
+    })
+    .then(res => console.log(res));
+}
 ```
 
 `res`에 응답객체가 들어옵니다. repl에서 응답 객체를 확인해보아요
@@ -156,7 +167,7 @@ axios.all을 하면 인수로 들어간 요청의 결과값이 담긴 promise가
 
 #### 참고 링크
 
-[Axios 공식문서-Github(영문)](https://github.com/axios/axios#cancellation)
+[Axios 공식문서-Github(영문)](https://github.com/axios/axios)
 
 [axios-ajax 비동기 작업 처리](https://beomy.tistory.com/36)
 
