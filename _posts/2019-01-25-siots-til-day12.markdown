@@ -86,7 +86,7 @@ min이라는 애를 하나 두고 여기에 하나씩 넣어본다.
 
 (1 3이 됐다)
 
-# 2. 디버깅
+# 2. 쿠키, 세션, 토큰
 
 ## 1. 웹에서 쿠키와 세션
 
@@ -144,8 +144,125 @@ HTTP 프로토콜의 약점 2
 
 ### 1. 세션-쿠키 방식 인증의 문제점
 
+이러한 문제점들 때문에 토큰이 나왔습니당!
+
 #### 저장공간
 
 #### 확장성
 
 #### CORS
+
+### 2. 특징
+
+이런 일련의 문제점을 보완하고자, 요즘은 토큰 방식의 인증 시스템이 훨씬 더 많이 쓰이고 있는 것 같습니다. 그럼 JWT라고 불리는 JSON Web Token은 뭘까요? JWT는 간단히 말하자면 토큰 기반 인증 시스템의 구현체라고 볼 수 있습니다. JWT는 아래와 같은 특징이 있습니다.
+
+- JSON Web Token (JWT) 은 웹표준 (RFC 7519) 으로서 두 개체에서 JSON 객체를 사용하여 가볍고 자가수용적인 (self-contained) 방식으로 정보를 안전성 있게 전달해줍니다.
+
+- 수많은 프로그래밍 언어에서 지원됩니다. JWT 는 C, Java, Python, C++, R, C#, PHP, JavaScript, Ruby, Go, Swift 등 대부분의 주류 프로그래밍 언어에서 지원됩니다.
+
+- 자가 수용적 (self-contained) 입니다. JWT는 필요한 모든 정보를 자체적으로 지니고 있습니다. JWT 시스템에서 발급된 토큰은, 토큰에 대한 기본정보, 전달 할 정보 그리고 토큰이 검증 됐다는것을 증명해주는 signature 를 포함하고있습니다.
+
+- 쉽게 전달 될 수 있습니다. JWT 는 자가 수용적이므로 두 개체 사이에서 손쉽게 전달 될 수 있습니다. 웹서버의 경우 HTTP의 헤더에 넣어서 전달 할 수도 있고, URL의 파라미터로 전달 할 수도 있습니다.
+
+토큰 프로세스
+
+### 3. 토큰 프로세스
+
+### 4. 토큰의 구성
+
+#### Header
+
+#### payload
+
+#### signature
+
+#### 최종적인 결과
+
+### 5. 토큰의 장점
+
+#### 서버의 확장성
+
+#### 토큰 사용의 확장성
+
+#### CORS
+
+### 6. 토큰의 단점
+
+### 7. Access Token & Refresh Token
+
+JWT의 강화버전
+
+## 4. 쿠키와 웹스토리지
+
+### 1. 웹스토리지
+
+## 5. 토큰은 어디에 저장되면 좋을까 ?
+
+### 1. 웹스토리지
+
+### 2. 쿠키
+
+# 3. 디버깅
+
+프로그래밍 코드에는 시맨틱 에러가 포함되기 쉬운데, 이런 오류는 대부분 진단하기가 어렵습니다. 프로그래밍 코드에는 분명 오류가 있지만 아무 일도 일어나지 않는 경우가 많기 때문입니다. 이런 시맨틱 에러는 오류 메시지가 없으므로 오류를 검색할 위치를 바로 알 수 없습니다. 우리의 코드에서 이런 오류를 찾고, 수정하는 것을 코드 디버깅이라고 합니다.
+
+## 1. console.log()와 커스텀 에러
+
+### 1. console API
+
+#### `console.assert(표현식, 오류객체)`
+
+평가된 표현식이 false이면 콘솔에 오류를 기록합니다.
+
+```js
+function greaterThan(a, b) {
+  console.assert(a > b, { message: "a is not greater than b", a: a, b: b });
+}
+greaterThan(5, 6);
+```
+
+#### `console.count('원하는 메세지')`
+
+`count()` 메소드가 스코프 내에서 호출된 횟수를 기록합니다.
+
+```js
+function login(name) {
+  console.count(name + " logged in");
+}
+```
+
+#### `console.dir(객체)`
+
+지정된 객체의 자바스크립트 표현을 출력합니다. 로그 중인 객체가 HTML 요소인 경우 DOM 표현의 속성이 아애롸 같이 출력됩니다.
+
+```js
+console.dir(document.body);
+```
+
+#### `console.group(객체[,객체, ...])` & `console.groupEnd()`
+
+console.group(객체[, 객체, ...]) : 선택적 제목을 사용하여 새로운 로깅 그룹을 시작합니다. console.group() 후와 console.groupEnd() 전에 발생하는 모든 콘솔 출력은 시각적으로 그룹화됩니다.
+
+console.groupEnd() : 로깅 그룹을 닫습니다.
+
+```js
+function name(obj) {
+  console.group("name");
+  console.log("first: ", obj.first);
+  console.log("middle: ", obj.middle);
+  console.log("last: ", obj.last);
+  console.groupEnd();
+}
+
+name({ first: "Wile", middle: "E", last: "Coyote" });
+```
+
+#### `console.trace(객체)`
+
+메소드를 호출한 지점에서 스택 추적을 출력합니다.
+
+```js
+console.trace();
+```
+
+### 2. 자바스크립트 디버거
