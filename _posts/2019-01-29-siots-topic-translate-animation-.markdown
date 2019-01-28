@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "4주차- CSS - transition, animation"
+title: "4주차- CSS - transform, transition, animation"
 subtitle: "siots"
 categories: siots
 tags: topic
 comments: true
 ---
 
-# 4주차 topic 2 - CSS - transition, animation
+# 4주차 topic 2 - CSS - transform, transition, animation
 
-# transform (변형)
+# 1. transform (변형)
 
 CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유롭게 바꿀 수 있습니다.
 
@@ -25,7 +25,20 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 - `y`축 : 아래쪽이 양(+)의 방향
 - `z`축 : 모니터를 바라보고있는 내 쪽이 양(+)의 방향,(반대가 음(-)의 방향)
 
-## 2D transform
+## 1. 2D transform
+
+### transform 메소드
+
+- `translate(x, y)` : 현재 위치에서 해당 요소를 주어진 x축과 y축의 거리만큼 이동시킵니다.
+- `rotate(Ndeg)` : 주어진 각도만큼 시계 방향(양수+)이나 반시계 방향(음수-)으로 회전시킵니다.
+- `scale(x, y)` : 요소의 크기를 주어진 배율만큼 늘리거나 줄입니다. 기본값은 1이고, 1보다 크면 크기를 늘리고, 1보다 작으면 크기를 줄입니다.
+- `skewX(Ndeg)` : 주어진 각도 만큼 x축 방향으로 기울입니다.
+- `skewY(Ndeg)` : 주어진 각도 만큼 y축 방향으로 기울입니다.
+- `skew(Xdeg, Ydeg) : 주어진 각도만큼 x축,y축 방향으로 기울입니다.
+- `matrix()` : 모든 2D transform 메소드를 한 줄에 설정할 수 있도록 해줍니다.
+  ```css
+  matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+  ```
 
 ### 지원 브라우저
 
@@ -33,11 +46,11 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 	<tbody>
 		<tr>
 			<th>속성</th>
-			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -69,7 +82,84 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 		</tr>
 	</tbody>
 </table>
-# translate (전환)
+
+## 2. 3D transform
+
+요소의 모양, 크기, 위치 등을 입체적으로 변형시킬 수 있습니다.
+
+### transform 메소드
+
+- `translate3d(x, y, z)` : 현재 위치에서 해당 요소를 주어진 x축, y축, z축의 거리만큼 이동시킵니다.
+- `rotateX(Ndeg)` : 주어진 각도만큼 x축을 기준으로 회전시킵니다. 양수이면 x축 양의 방향으로, 음수이면 x축 음의 방향으로 회전시킵니다.
+- `rotateY(Ndeg)` : 주어진 각도만큼 y축을 기준으로 회전시킵니다. 양수이면 y축 양의 방향으로, 음수이면 y축 음의 방향으로 회전시킵니다.
+- `rotateZ(Ndeg)` : 주어진 각도만큼 z축을 기준으로 회전시킵니다. 양수이면 z축 양의 방향으로, 음수이면 z축 음의 방향으로 회전시킵니다.
+
+[더 많은 메소드와 속성이 있습니다. 더 알고싶다면 여기로..](http://tcpschool.com/css/css3_transform_3Dtransform)
+
+### 지원 브라우저
+
+<table class="tb-1" summary="">
+	<tbody>
+		<tr>
+			<th>속성</th>
+			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
+		</tr>
+		<tr>
+			<td>
+			<p>transform</p>
+			<p>transform-origin</p>
+			<p>perspective</p>
+			<p>perspective-origin</p>
+			<p>backface-visibility</p>
+			</td>
+			<td>
+			<p>10.0</p>
+			</td>
+			<td>
+			<p>36.0</p>
+			<p>12.0 -webkit-</p>
+			</td>
+			<td>
+			<p>16.0</p>
+			<p>10.0&nbsp;-moz-</p>
+			</td>
+			<td>
+			<p>9.0</p>
+			<p>4.0 -webkit-</p>
+			</td>
+			<td>
+			<p>23.0</p>
+			<p>15.0 -webkit</p>
+			</td>
+		</tr>
+		<tr>
+			<td>transform-style</td>
+			<td>11.0</td>
+			<td>
+			<p>36.0</p>
+			<p>12.0 -webkit-</p>
+			</td>
+			<td>
+			<p>16.0</p>
+			<p>10.0&nbsp;-moz-</p>
+			</td>
+			<td>
+			<p>9.0</p>
+			<p>4.0 -webkit-</p>
+			</td>
+			<td>
+			<p>23.0</p>
+			<p>15.0 -webkit</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+# 2. translate (전환)
 
 CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 그 **속성의 변화가 일정 기간에 걸쳐 일어나도록** 할 수 있습니다.
 
@@ -131,11 +221,11 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -168,9 +258,9 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 	</tbody>
 </table>
 
-# Animation
+# 3. Animation
 
-## @keyframes
+## 1. @keyframes
 
 애니메이션에서 가장 중요한 부분은 `@keyframes`입니다.
 @keyframes은 애니메이션이 만들어지는 부분입니다. 타임라인 안의 하나이 스테이지(구간)들이라고 생각하세요.
@@ -196,7 +286,7 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 }
 ```
 
-## Animation
+## 2. Animation
 
 애니메이션은 여러개의 속성을 가질 수 있습니다.
 
@@ -224,14 +314,14 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
   - both
 - `animation-play-state` : 애니메이션 효과의 재생 상태를 설정합니다.
 
-## 단축 표기법
+## 3. 단축 표기법
 
 - 선언 순서는 상관없다
 - 값과 값 상태를 띄어쓰기로 구분
 - `animation-name`, `animation-duration`은 필수값
 - duration 1s, delay 1s로 둘다 똑같을때, duration은 필수값이기 때문에 먼저 선언된 (n)s를 duration으로 인식한다.
 
-## 여러개의 애니메이션 적용
+## 4. 여러개의 애니메이션 적용
 
 복수의 애니메이션을 추가하려면 **쉼표**를 사용해서 분리할 수 있습니다.
 `@keyframes`을 여러개 선언하고 엘리먼트에 쉼표를 사용하여 묶어줍니다
@@ -249,7 +339,7 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 }
 ```
 
-## Vendor Prefixes 더하기
+## 5. Vendor Prefixes 더하기
 
 작업을 하면서 브라우저에 맞는 프리픽스를 사용하여 브라우저 지원이 가능한 잘 되도록 합니다.
 
@@ -292,7 +382,7 @@ animation
 }
 ```
 
-#### 파이어폭스에서의 애니메이션
+## 6. 파이어폭스에서의 애니메이션
 
 파이어폭스에서는 변형하는 오브젝트가 이상하게 렌더링 됩니다. 해당 요소(element)에 투명한 외곽선을 추가하면 파이어폭스에서도 이쁘게 랜더해줍니다
 
@@ -303,7 +393,7 @@ animation
 }
 ```
 
-## 지원 브라우저
+## 7. 지원 브라우저
 
 [자세한 버전별 지원은 CanIUse를 참고하세요!](https://caniuse.com/#feat=css-animation)
 
@@ -311,11 +401,11 @@ animation
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -346,13 +436,13 @@ animation
 	</tbody>
 </table>
 
-## 실습하러 가봅시다
+## 8. GOGO 실습하러 가봅시다
 
 [실습용 codepen- fork해주세요!](https://codepen.io/Shim-SoYoung/pen/Norrxj)
 
 [튜토리얼 강좌 링크 - 스크롤 40%](https://webdesign.tutsplus.com/ko/tutorials/a-beginners-introduction-to-css-animation--cms-21068)
 
-### 버튼을 누르면 돌아가게 해봅시다
+### + 버튼을 누르면 돌아가게 해봅시다
 
 1. html에 버튼을 class명을 지정해 생성해줍니다
 1. 버튼 스타일을 지정해줍니다
