@@ -33,11 +33,11 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 	<tbody>
 		<tr>
 			<th>속성</th>
-			<th><img alt="ie" class="icon" src="/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -79,20 +79,16 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 
 ## 속성
 
-- `transition`
-  - 단축 표기법으로 아래의 속성들을 한 줄에 정의할 수 있음
-- `transition-delay`
-  - 전환 효과가 나타나기 전까지의 지연 시간
-- `transition-duration`
-  - transition이 일어나는 지속 시간을 명시합니다.
+- `transition` : 단축 표기법으로 아래의 속성들을 한 줄에 정의할 수 있음
+- `transition-delay` : 전환 효과가 나타나기 전까지의 지연 시간
+- `transition-duration` : transition이 일어나는 지속 시간을 명시합니다.
 - `transition-property`
 
   - transition을 적용해야 하는 CSS속성의 이름을 명시합니다. 여기에 나열 된 속성들만 transition하는 동안 움직입니다.
   - 나열되지않은 속성의 변화는 보통 때와 같이 즉시 일어납니다.
   - `all`이라는 값을 주면 적용되는 모든 변화가 선택됩니다.
 
-- `transition-timing-function`
-  - transition의 속도를 조절합니다
+- `transition-timing-function` : transition의 속도를 조절합니다
   - ease : **기본값**, 전환효과가 천천히 시작되어, 빨라지고, 마지막엔 다시 느려짐
   - linear : 일정한 속도로 진행
   - ease-in : 전환효과가 느리게 시작함
@@ -135,11 +131,11 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -206,22 +202,27 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 
 - `animation-name` : `@keyframes` 이름 (위에서는 siots
   )
-- `animation-duration` : 타임 프레임 길이. 애니메이션 시작부터 마지막까지의 총 지속시간
+- `animation-duration` : 타임 프레임 길이. 애니메이션 시작부터 마지막까지의 총 지속시간(기본값이 0이므로, 값을 명시해주지 않으면 아무런 효과도 나타나지 않음.)
 - `animation-timing-function` : 애니메이션 속도 조절
-  - linear
-  - ease
-  - ease-in : 느리게-빠르게
-  - ease-out : 빠르게-느리게
-  - ease-in-out : 느리게-빠르게-느리게
-  - cubic-bezier
+  - linear : 처음부터 끝까지 일정한 속도로 진행
+  - ease : **기본값** 천천히 시작되어, 빨라지고, 마지막에는 느려집니다.
+  - ease-in : 효과가 천천히 시작됩니다
+  - ease-out : 효과가 천천히 끝납니다.
+  - ease-in-out : 효과가 천천히 시작되어 천천히 끝납니다.
+  - cubic-bezier(n,n,n,n) : 사용자가 정의한 함수에 따라 진행됩니다.
 - `animation-delay` : 애니메이션이 시작하기 전 지연시간
 - `animation-iteration-count` : 반복 횟수
-- `animation-direction` : 루프 방향. 정방향으로 반복, 역박향으로 반복, 번갈아가며 반복 등을 설정
-- `animation-fill-mode` : 애니메이션 시작/끝 상태 제어
+  - 횟수를 직접 지정할 수 있음(n번)
+  - 값을 `infinite`로 설정하면 애니메이션 효과가 무한히 반복 됨.
+- `animation-direction` : 루프 방향. 설정하지 않으면 정방향입니다.
+  - reserve : 진행 방향을 반대로 바꾼다.(to에서 from방향 또는 100%에서 0% 방향)
+  - alternate : 진행 방향을 애니메이션이 반복될 때마다 계속 변경합니다. 정방향-역방향-정방향-역방향..반복
+- `animation-fill-mode` : 애니메이션 효과가 재생중이 아닐 때 요소의 스타일을 설정합니다.
   - none
   - forwards
   - backwards
   - both
+- `animation-play-state` : 애니메이션 효과의 재생 상태를 설정합니다.
 
 ## 단축 표기법
 
@@ -310,11 +311,11 @@ animation
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://github.com/bbgrams/bbgrams.github.io/blob/master/assets/img//icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
