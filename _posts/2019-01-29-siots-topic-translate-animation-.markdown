@@ -34,11 +34,34 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 - `scale(x, y)` : 요소의 크기를 주어진 배율만큼 늘리거나 줄입니다. 기본값은 1이고, 1보다 크면 크기를 늘리고, 1보다 작으면 크기를 줄입니다.
 - `skewX(Ndeg)` : 주어진 각도 만큼 x축 방향으로 기울입니다.
 - `skewY(Ndeg)` : 주어진 각도 만큼 y축 방향으로 기울입니다.
-- `skew(Xdeg, Ydeg) : 주어진 각도만큼 x축,y축 방향으로 기울입니다.
+- `skew(Xdeg, Ydeg)` : 주어진 각도만큼 x축,y축 방향으로 기울입니다.
 - `matrix()` : 모든 2D transform 메소드를 한 줄에 설정할 수 있도록 해줍니다.
   ```css
   matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
   ```
+
+### 사용법
+
+```css
+.element{
+	transform: none
+
+	/* 2D transform */
+	transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0)
+	transform: translate(12px, 50%)
+	transform: translateX(20px)
+	transform: translateY(30px)
+	transform: scale(2, 0.5)
+	transform: scaleX(2)
+	transform: scaleY(0.5)
+	transform: rotate(90deg)
+	transform: skewX(30deg)
+	transform: skewY(60deg)
+
+	/* 여러가지를 한번에 설정 */
+	transform: translateX(10px) rotate(10deg) translateY(5px)
+}
+```
 
 ### 지원 브라우저
 
@@ -95,6 +118,23 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 - `rotateZ(Ndeg)` : 주어진 각도만큼 z축을 기준으로 회전시킵니다. 양수이면 z축 양의 방향으로, 음수이면 z축 음의 방향으로 회전시킵니다.
 
 [더 많은 메소드와 속성이 있습니다. 더 알고싶다면 여기로..](http://tcpschool.com/css/css3_transform_3Dtransform)
+
+### 사용법
+
+```css
+.element{
+	/* 3D transform */
+	transform: translate3d(12px, 50%, 3em)
+	transform: translateZ(2px)
+	transform: scale3d(2.5, 1.2, 0.3)
+	transform: scaleZ(0.3)
+	transform: rotate3d(1, 2.0, 3.0, 10deg)
+	transform: rotateX(10deg)
+	transform: rotateY(10deg)
+	transform: rotateZ(10deg)
+	transform: perspective(17px)
+}
+```
 
 ### 지원 브라우저
 
@@ -170,6 +210,13 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 ## 속성
 
 - `transition` : 단축 표기법으로 아래의 속성들을 한 줄에 정의할 수 있음
+
+```css
+.element {
+  transition: property timing-function duration delay;
+}
+```
+
 - `transition-delay` : 전환 효과가 나타나기 전까지의 지연 시간
 - `transition-duration` : transition이 일어나는 지속 시간을 명시합니다.
 - `transition-property`
@@ -305,14 +352,14 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
   - 횟수를 직접 지정할 수 있음(n번)
   - 값을 `infinite`로 설정하면 애니메이션 효과가 무한히 반복 됨.
 - `animation-direction` : 루프 방향. 설정하지 않으면 정방향입니다.
-  - reserve : 진행 방향을 반대로 바꾼다.(to에서 from방향 또는 100%에서 0% 방향)
+  - reverse : 진행 방향을 반대로 바꾼다.(to에서 from방향 또는 100%에서 0% 방향)
   - alternate : 진행 방향을 애니메이션이 반복될 때마다 계속 변경합니다. 정방향-역방향-정방향-역방향..반복
-- `animation-fill-mode` : 애니메이션 효과가 재생중이 아닐 때 요소의 스타일을 설정합니다.
-  - none
-  - forwards
-  - backwards
-  - both
-- `animation-play-state` : 애니메이션 효과의 재생 상태를 설정합니다.
+- `animation-fill-mode` : 애니메이션 재생이 종료되었을때의 상태를 설정합니다.
+  - none : 아무것도 지정되지 않음
+  - forwards : 애니메이션이 키프레임의 100%에 도달했을 때 마지막 키프레임을 유지합니다.(animation-direction의 값이 reverse일 경우엔 0%가 마지막 키프레임 값이 됩니다.)
+  - backwards : 애니메이션의 스타일을 애니메이션이 실제로 시작되기 전에 미리 적용합니다.(animation-delay가 설정되어있을 때 그 지연시간동안 애니메이션 스타일을 유지합니다.)
+  - both : `forwords`, `backwords`를 둘 다 적용합니다.
+- `animation-play-state` : 애니메이션 효과의 재생 상태를 설정합니다. - running : 기본값. 애니메이션을 재생합니다 - paused : 첫번째 키프레임에서 애니메이션을 일시중지 시킵니다. 애니메이션이 일시중지 된 경우 적용되는 스타일은 기본스타일이 아닌 첫번쨰 키프레임의 스타일입니다.
 
 ## 3. 단축 표기법
 
