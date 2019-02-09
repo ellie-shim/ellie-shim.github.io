@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5주차- REACT "
+title: "5주차- REACT - 1 - JSX"
 subtitle: "siots"
 categories: siots
 tags: topic
@@ -234,3 +234,40 @@ class App extends React.Component {
 ```
 
 ![함수를 자식으로 사용하기](https://bbgrams.github.io/assets/img/topic-5-jsx4.png)
+
+
+1. `Repeat`의 props.children에는 `(index) => <div key={index}>This is item {index} in the list</div>` 라는 함수가 들어갑니다.
+
+1. props.children에 함수가 들어갔기 때문에 ` items.push(props.children(i));` 이런식으로 사용할 수 있습니다.
+
+> 이거 무슨 말인지 모르겠어용,,
+
+
+#### 4. 진리값, null, undefined는 무시됩니다.
+
+`false`, `null`, `undefined`, `true` 는 유효한 자식입니다. 하지만 화면에 아무것도 그려지지 않습니다. 아래 JSX 표현식은 모두 같은 결과를 렌더링합니다
+
+```js
+<div />
+
+<div></div>
+
+<div>{false}</div>
+
+<div>{null}</div>
+
+<div>{undefined}</div>
+
+<div>{true}</div>
+```
+
+하지만 모든 `falsy`값이 해당되는 것은 아닙니다. `0`과 `NaN`은 `false`로 처리되지않고 화면에 그려집니다.
+
+`false`, `true`, `null`, `undefined` 를 출력시키고 싶다면, 먼저 문자열로 변환 해야합니다.
+
+```js
+<div>
+  My JavaScript variable is {String(myVariable)}.
+</div>
+```
+
