@@ -136,10 +136,20 @@ const App = () => {
 
 여는 태그와 닫는 태그 사이에 문자열을 써넣을 수 있고, 이 때 `props.children`은 그냥 문자열이 됩니다.
 
+1. 각 줄의 처음과 끝에 있는 공백을 제거합니다. 
+1. 빈 줄이 삭제됩니다.
+1. 태그에 붙어있는 개행이 삭제됩니다.
+1. 문자열 리터럴 중간에 등장하는 여거래의 개행은 한개의 공백으로 줄어듭니다.
+
 기본적으로, React에서는 cross-site-scripting(XSS) 공격을 막기 위하여 렌더링 되기 전에 JSX 내에 포함된 모든 값을 이스케이프 합니다. 따라서 모든 것은 렌더링 되기 전에 문자열로 변환됩니다.
+
+`props.children`에서는 HTML 이스케이핑이 풀리게 되므로, 보통의 HTML을 사용할 수 있습니다.
+
 ![jsx의 이스케이프](https://bbgrams.github.io/assets/img/topic-5-jsx2.png)
 
-[Tip. string 형태의 html을 렌더링하기,newline(\n) 을 BR 태그로 변환하기](https://velopert.com/1896)
+[Tip. JSX의 XSS 방어를 무시하고 html코드를 출력하고 싶을 때 ](https://velopert.com/1896)
+
+> 문자의 이스케이프
 ```
 & becomes &amp;
 < becomes &lt;
@@ -148,3 +158,79 @@ const App = () => {
 ' becomes &#39;
 ```
 
+#### 2. JSX를 자식으로 사용하기
+
+JSX 엘리먼트를 자식으로 넘겨줄 수도 있습니다. 이는 중첩된 컴포넌트를 보여주고 싶을 때 유리합니다.
+
+```js
+<MyContainer>
+  <MyFirstComponent />
+  <MySecondComponent />
+</MyContainer>
+```
+
+엘리먼트로 이루어진 배열 역시 반환할 수 있습니다.
+
+```js
+render() {
+  // 별도의 엘리먼트로 감싸줄 필요가 없습니다!
+  return [
+    // 키를 잊지 마세요 :)
+    <li key="A">First item</li>,
+    <li key="B">Second item</li>,
+    <li key="C">Third item</li>,
+  ];
+}
+```
+
+위 코드는 아래처럼 그려집니다.
+
+![엘리먼트로 이루어진 배열](https://bbgrams.github.io/assets/img/topic-5-jsx3.png)
+
+#### 3. JavaScript 표현식을 자식으로 사용하기
+
+`{}`로 둘러싼 JavaScript 표현식은 모두 자식이 될 수 있습니다.
+배열을 렌더링하고 싶을 때 자주 사용됩니다.
+
+
+```js
+function Item(props) {
+  return <li>count {props.count}</li>;
+}
+
+function TodoList() {
+  const todos = ['finish doc', 'submit pr', 'nag dan to review'];
+  return (
+    <ul>
+      {todos.map((message) => <Item key={message} message={message} />)}
+    </ul>
+  );
+}
+```
+
+#### 3. 함수를 자식으로 사용하기
+
+`props.children`은 다른 prop들과 같은 방식으로 동작하며 어떤 형태의 데이터도 넘겨질 수 있습니다.
+
+아래 소스처럼 `props.children`에 함수를 넘겨줄 수도 있습니다.
+
+```js
+function Repeat(props) {
+  let items = [];
+  for (let i = 0; i < props.numTimes; i++) {
+    items.push(props.children(i));
+  }
+  return <div>{items}</div>;
+}
+class App extends React.Component {
+  render() {
+    return (
+      <Repeat numTimes={10}>
+        {(index) => <div key={index}>This is item {index} in the list</div>}
+      </Repeat>
+    );
+  }
+}
+```
+
+![함수를 자식으로 사용하기](https://bbgrams.github.io/assets/img/topic-5-jsx4.png)
