@@ -124,11 +124,27 @@ const App = () => {
   );
 };
 ```
-
+![props가 넘겨진것 확인](https://bbgrams.github.io/assets/img/topic-5-jsx.png)
 위 예제에서는 `kind` prop이 안전하게 추출되었고 DOM의 `<button> `요소로는 전달되지 않았습니다. 다른 모든 prop들은 `...other` 객체를 통해 전달되었고, 이 방법을 통해 컴포넌트를 굉장히 유연하게 만들 수 있습니다. `onClick`과 `children` prop가 넘겨진 모습을 확인해보세요.
+
 
 속성 펼치기 기법은 유용하게 사용될 수 있지만 **불필요한 props 혹은 틀린 어트리뷰트를 컴포넌트에 넘기게 되는 일이 생기기 쉽다**는 단점도 있습니다.
 
 ## JSX에서 자식 다루기
 
+#### 1. 문자열 리터럴
+
+여는 태그와 닫는 태그 사이에 문자열을 써넣을 수 있고, 이 때 `props.children`은 그냥 문자열이 됩니다.
+
+기본적으로, React에서는 cross-site-scripting(XSS) 공격을 막기 위하여 렌더링 되기 전에 JSX 내에 포함된 모든 값을 이스케이프 합니다. 따라서 모든 것은 렌더링 되기 전에 문자열로 변환됩니다.
+![jsx의 이스케이프](https://bbgrams.github.io/assets/img/topic-5-jsx2.png)
+
+[Tip. string 형태의 html을 렌더링하기,newline(\n) 을 BR 태그로 변환하기](https://velopert.com/1896)
+```
+& becomes &amp;
+< becomes &lt;
+> becomes &gt;
+" becomes &quot;
+' becomes &#39;
+```
 
