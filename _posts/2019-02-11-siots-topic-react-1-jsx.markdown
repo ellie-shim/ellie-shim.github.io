@@ -271,3 +271,178 @@ class App extends React.Component {
 </div>
 ```
 
+
+# JSX를 사용하지 않는 React
+
+React를 할 때 JSX는 필수사항이 아닙니다.
+JSX는 `React.createElement(component, props, ...children)`을 호출하는 문법 설탕입니다. 그래서 JSX에서 할 수 있는 모든 일은 순수 자바스크립트에서도 할 수 있습니다.
+
+JSX를 사용한 코드
+
+```js
+class Hello extends React.Component {
+  render() {
+    return <div>Hello {this.props.toWhat}</div>;
+  }
+}
+
+ReactDOM.render(
+  <Hello toWhat="World" />,
+  document.getElementById('root')
+);
+```
+
+순수 자바스크립트 코드
+
+```js
+class Hello extends React.Component {
+  render() {
+    return React.createElement('div', null, `Hello ${this.props.toWhat}`);
+  }
+}
+
+ReactDOM.render(
+  React.createElement(Hello, {toWhat: 'World'}, null),
+  document.getElementById('root')
+);
+```
+`React.createElement`를 변수에 할당해 더 편하게 작업할 수 있습니다.
+
+```js
+const e = React.createElement;
+
+ReactDOM.render(
+  e('div', null, 'Hello World'),
+  document.getElementById('root')
+);
+```
+
+---
+
+[온라인 바벨 컴파일러](https://babeljs.io/repl/#?presets=react&code_lz=GYVwdgxgLglg9mABACwKYBt1wBQEpEDeAUIogE6pQhlIA8AJjAG4B8AEhlogO5xnr0AhLQD0jVgG4iAXyJA)에 아래 코드를 넣어보고 어떻게 컴파일 되는지 확인해보세용
+
+```js
+class Hello extends React.Component{
+	render(){
+      return(
+        <div>
+            <h1>hello</h1>
+            {this.props.name}
+        </div>
+      )
+    }
+}
+ReactDOM.render(
+  <Hello name="Ellie" />,
+  document.getElementById('root')
+)
+```
+
+
+# ES6를 사용하지 않는 React
+
+#### 클래스
+
+보통 React 컴포넌트는 순수 자바스크립트 클래스로 정의합니다.
+
+아직 ES6를 사용하지 않는다면 클래스 대신 `create-react-class`를 사용할 수 있습니다. ES6의 클래스와 일부 제외하고 비슷하게 동작합니다.
+
+ES6 클래스를 사용한 코드
+```js
+class Greeting extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+ES6를 사용하지 않은 코드
+```js
+var createReactClass = require('create-react-class');
+var Greeting = createReactClass({
+  render: function() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+});
+```
+
+#### Props 기본값 선언
+
+ES6 클래스로 만든 컴포넌트에는  `defaultProps` 속성을 정의할 수 있습니다.
+`createReactClass()` 를 이용할 때는 객체에 함수를 전달하기 위해 `getDefaultProps()` 를 정의해주어야 합니다.
+
+ES6 사용한 코드
+```js
+class Greeting extends React.Component {
+  // ...
+}
+
+Greeting.defaultProps = {
+  name: 'Mary'
+};
+```
+
+
+ES6를 사용하지 않은 코드
+```js
+var Greeting = createReactClass({
+  getDefaultProps: function() {
+    return {
+      name: 'Mary'
+    };
+  },
+
+  // ...
+
+});
+```
+
+#### 초기 state 설정
+
+`createReactClass()` 를 이용할 때는 기초 state를 반환하는 개별 `getInitialState` 메소드를 사용합니다.
+
+ES6 사용한 코드
+```js
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {count: props.initialCount};
+  }
+  // ...
+}
+```
+
+ES6를 사용하지 않은 코드
+```js
+var Counter = createReactClass({
+  getInitialState: function() {
+    return {count: this.props.initialCount};
+  },
+  // ...
+});
+```
+
+#### Autobinding
+
+1. ES6로 선언한 React 컴포넌트에서 메소드는 `this`를 바인딩해주어야합니다.
+
+2. `createReactClass()` 에서는 모든 메서드를 바인드하기 때문에 따로 바인딩 작업을 하지 않습니다.
+
+```js
+// 1.
+this.handleClick = this.handleClick.bind(this);
+```
+
+
+메소드를 선언할 때 화살표 함수를 이용해서 선언해주어도 바인딩되지만 이는 **실험 기능**이며 언어에서 명확히 제안되지 않았습니다.
+
+```js
+handleClick = () => {
+  alert(this.state.message);
+}
+```
+
+확실하게 `this`를 바인딩 하는 방법은
+- 생성자(constructor)에서 bind 메소드 사용하기 (1번)
+- `createReactClass()` 사용하기 (2번)
+- arrow함수 사용하기 `onClick={(e) => this.handleClick(e)}`
