@@ -151,7 +151,7 @@ class NameForm extends React.Component {
 
 #### 기본값 지정하기
 
-제어되지 않는 컴포넌트를 사용하면서 초기값을 지정해주어야 할 때에는 `value` 어트리뷰트 대신 `defaultValue`를 사용해줍니다.
+제어되지 않는 컴포넌트로 남겨두면서 초기값을 설정해주어야 할 때에는 `value` 어트리뷰트 대신 `defaultValue`를 사용해줍니다. `value` 값을 설정해주는 순간 제어되는 컴포넌트가 되기 때문입니다.
 
 ```js
 render() {
@@ -173,6 +173,12 @@ render() {
 `<input type="checkbox">`와 `<input type="radio">` 엘리먼트는 `defaultChecked` 어트리뷰트를, 
 
 `<input>`, `<select>`, `<textarea>`는 defaultValue 어트리뷰트를 지원합니다.
+
+```markdown
+`<input type="checkbox">`, `<input type="radio">` : `checked={true}` 로 설정해주면 제어되는 컴포넌트가 됩니다. 
+
+`defaultChecked={true}` 로 제어되지않는 컴포넌트이면서 checked의 기본값이 true이게 설정할 수 있습니다.
+```
 
 #### <input type="file">
 
@@ -227,8 +233,8 @@ this.refName.files에 들어있는 값
 
 
 
-#### 그럼 언제 제어되지 않는 컴포넌트를 써도 될까요 
-
+#### 😵 그럼 언제 제어되지 않는 컴포넌트를 써도 될까요 😵
+🐰🐤🐣🐼🐾🐾🐾🐾🐾🐾🐾🐾
 [제어되는 input과 제어되지 않는 input에 대한 글](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
 
 위 글의 결론 :

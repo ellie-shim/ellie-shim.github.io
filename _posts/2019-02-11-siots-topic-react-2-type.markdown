@@ -81,6 +81,21 @@ Greeting.defaultProps = {
 
 `defaultProps` 속성을 이용하여 props의 기본값을 설정할 수 있습니다.
 
+#### ❗❗ 주의하세요 컴포넌트 클래스의 `defaultProps`속성과 `Proptypes check`는 다릅니다.
+
+1. defaultProps
+    - [defaultProps](https://reactjs-org-ko.netlify.com/docs/react-component.html#defaultprops)
+    - 모든 컴포넌트에는 default props가 있어야하고 주석으로 설명을 달아놓는다
+    - prop의 기본값으로 사용된다. => 값을 넘겨주지 않았을 때에 기본값이 넘어간다.
+    - 기본값이 사용되는 것이 문제일때도있다.
+
+1. Proptypes
+    - 개발중에 props에 잘못된 값이 들어왔을 때를 체크한다
+    - 라이브러리 Proptypes
+    - TypeScript
+    - Flow
+
+
 # 정적 타입(자료형) 체크
 
 #### 1. 정적 타이핑
