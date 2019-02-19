@@ -47,7 +47,7 @@ comments: true
 
 ### 4. 순회 3가지
 
-![바이너리서치트리예제](https://github.com/bbgrams/bbgrams.github.io/tree/master/assets/img/binary-search-tree.png)
+![바이너리서치트리예제](https://github.com/ellie-shim/ellie-shim.github.io/tree/master/assets/img/binary-search-tree.png)
 이름만 화려하고 별거 없당ㅋ
 **기준은 root**
 

@@ -69,11 +69,11 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 	<tbody>
 		<tr>
 			<th>속성</th>
-			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://ellie-shim.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://ellie-shim.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://ellie-shim.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://ellie-shim.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://ellie-shim.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -142,11 +142,11 @@ CSS3에서는 `transform` 속성을 사용하여 요소의 스타일을 자유�
 	<tbody>
 		<tr>
 			<th>속성</th>
-			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://ellie-shim.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://ellie-shim.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://ellie-shim.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://ellie-shim.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://ellie-shim.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -268,11 +268,11 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://ellie-shim.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://ellie-shim.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://ellie-shim.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://ellie-shim.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://ellie-shim.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>
@@ -448,11 +448,11 @@ animation
 	<tbody>
 		<tr>
 			<th style="width: 25%;">속성</th>
-			<th><img alt="ie" class="icon" src="https://bbgrams.github.io/assets/img/icon-ie.png"></th>
-			<th><img alt="chrome" class="icon" src="https://bbgrams.github.io/assets/img/icon-chrome.png"></th>
-			<th><img alt="firefox" class="icon" src="https://bbgrams.github.io/assets/img/icon-firefox.png"></th>
-			<th><img alt="safari" class="icon" src="https://bbgrams.github.io/assets/img/icon-safari.png"></th>
-			<th><img alt="opera" class="icon" src="https://bbgrams.github.io/assets/img/icon-opera.png"></th>
+			<th><img alt="ie" class="icon" src="https://ellie-shim.github.io/assets/img/icon-ie.png"></th>
+			<th><img alt="chrome" class="icon" src="https://ellie-shim.github.io/assets/img/icon-chrome.png"></th>
+			<th><img alt="firefox" class="icon" src="https://ellie-shim.github.io/assets/img/icon-firefox.png"></th>
+			<th><img alt="safari" class="icon" src="https://ellie-shim.github.io/assets/img/icon-safari.png"></th>
+			<th><img alt="opera" class="icon" src="https://ellie-shim.github.io/assets/img/icon-opera.png"></th>
 		</tr>
 		<tr>
 			<td>

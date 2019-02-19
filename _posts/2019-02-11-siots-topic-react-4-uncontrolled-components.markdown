@@ -7,7 +7,7 @@ tags: topic
 comments: true
 ---
 
-# 5주차 topic - 
+# 5주차 topic -
 
 # 제어되는 컴포넌트 (Controlled Components)
 
@@ -23,7 +23,7 @@ React state를 "진리의 유일한 원천 (single source of truth)"으로 만�
 class NameForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = { value: "" };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,11 +31,11 @@ class NameForm extends React.Component {
 
   handleChange(event) {
     // input에 onChange가 일어날 때마다 value값을 setState 해준다.
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
+    alert("A name was submitted: " + this.state.value);
     event.preventDefault();
   }
 
@@ -44,7 +44,11 @@ class NameForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+          <input
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -70,18 +74,18 @@ class NameForm extends React.Component {
 class FlavorForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {value: 'coconut'};
+    this.state = { value: "coconut" };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
   }
 
   handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
+    alert("Your favorite flavor is: " + this.state.value);
     event.preventDefault();
   }
 
@@ -106,7 +110,6 @@ class FlavorForm extends React.Component {
 
 데이터를 변경하는 모든 방법에 대한 이벤트 핸들러를 작성해야하고, 또 하나의 React 컴포넌트에 모든 input state를 전달해야하기 때문에 제어되는 컴포넌트는 매우 귀찮은 작업일 수 있습니다.
 
-
 기존 코드베이스를 React로 변경하거나, React 어플리케이션을 React가 아닌 라이브러리와 통합할 때 같은 상황에서 사용할 수 있는 대체 기술로 `제어되지 않는 컴포넌트` 가 있습니다.
 
 # 제어되지 않는 컴포넌트 (Uncontrolled Components)
@@ -126,7 +129,7 @@ class NameForm extends React.Component {
 
   handleSubmit(event) {
     // 2 .ref로부터 value 값 가져옴
-    alert('A name was submitted: ' + this.input.value);
+    alert("A name was submitted: " + this.input.value);
     event.preventDefault();
   }
 
@@ -136,7 +139,7 @@ class NameForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
-          <input type="text" ref={(input) => this.input = input} />
+          <input type="text" ref={input => (this.input = input)} />
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -144,10 +147,10 @@ class NameForm extends React.Component {
   }
 }
 ```
+
 진리의 원천을 DOM에 두기 때문에, React를 사용한 코드와 사용하지 않은 코드의 통합 작업을 좀 더 쉽게 만들어 줍니다. 또한 코드의 양이 상대적으로 적습니다.
 
 지저분하더라도 빠른 해결책을 원한다면 제어되지 않는 컴포넌트를 이용하세요.
-
 
 #### 기본값 지정하기
 
@@ -170,12 +173,12 @@ render() {
 }
 ```
 
-`<input type="checkbox">`와 `<input type="radio">` 엘리먼트는 `defaultChecked` 어트리뷰트를, 
+`<input type="checkbox">`와 `<input type="radio">` 엘리먼트는 `defaultChecked` 어트리뷰트를,
 
 `<input>`, `<select>`, `<textarea>`는 defaultValue 어트리뷰트를 지원합니다.
 
 ```markdown
-`<input type="checkbox">`, `<input type="radio">` : `checked={true}` 로 설정해주면 제어되는 컴포넌트가 됩니다. 
+`<input type="checkbox">`, `<input type="radio">` : `checked={true}` 로 설정해주면 제어되는 컴포넌트가 됩니다.
 
 `defaultChecked={true}` 로 제어되지않는 컴포넌트이면서 checked의 기본값이 true이게 설정할 수 있습니다.
 ```
@@ -221,19 +224,19 @@ class FileInput extends React.Component {
   }
 }
 ```
+
 [![Edit input file - 제어되지 않는 컴포넌트](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/j20m79oj99)
 
-코드샌드박스에서  console창을 확인해봅시다.
+코드샌드박스에서 console창을 확인해봅시다.
 
-![this.refName.files에 들어있는 값](https://bbgrams.github.io/assets/img/topic-5-file.png)
+![this.refName.files에 들어있는 값](https://ellie-shim.github.io/assets/img/topic-5-file.png)
 
 this.refName.files에 들어있는 값
 
-[HTML5-HTML5 File API 기초부터 썸네일 이미지 생성까지](https://programmingsummaries.tistory.com/367) : 자바스크립트로 제어하는 옛날 글이긴 한데 나중에 참고해보세요 
-
-
+[HTML5-HTML5 File API 기초부터 썸네일 이미지 생성까지](https://programmingsummaries.tistory.com/367) : 자바스크립트로 제어하는 옛날 글이긴 한데 나중에 참고해보세요
 
 #### 😵 그럼 언제 제어되지 않는 컴포넌트를 써도 될까요 😵
+
 🐰🐤🐣🐼🐾🐾🐾🐾🐾🐾🐾🐾
 [제어되는 input과 제어되지 않는 input에 대한 글](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
 

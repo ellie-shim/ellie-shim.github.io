@@ -100,19 +100,19 @@ comments: true
 ---
 
 ```xml
-[링크도 가능](https://bbgrams.github.io)
+[링크도 가능](https://ellie-shim.github.io)
 ```
 
-[링크도 가능](https://bbgrams.github.io)
+[링크도 가능](https://ellie-shim.github.io)
 
 ---
 
 ```xml
 느낌표를 붙여주면 이미지 삽입도 가능
-![비비](https://bbgrams.github.io/assets/img/bb-pic.png)
+![비비](https://ellie-shim.github.io/assets/img/bb-pic.png)
 ```
 
-![비비](https://bbgrams.github.io/assets/img/bb-pic.png)
+![비비](https://ellie-shim.github.io/assets/img/bb-pic.png)
 
 ---
 
