@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "5주차- REACT - 3 - Ref"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

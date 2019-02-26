@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "14일차 - 시멘틱마크업"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "1일차 - 자료구조론, "
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

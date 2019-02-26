@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "3주차 topic - Axios, fetch API"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

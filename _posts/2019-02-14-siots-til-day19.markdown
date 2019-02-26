@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "19일차 - 리덕스"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

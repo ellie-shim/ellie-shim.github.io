@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "4주차- CSS - float, position"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

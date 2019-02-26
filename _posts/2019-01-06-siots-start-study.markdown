@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "스터디-시옷즈 시작"
-subtitle: "siots"
-categories: siots
-tags: siots
+subtitle: "siotz"
+categories: siotz
+tags: siotz
 comments: true
 ---
 
@@ -13,4 +13,4 @@ comments: true
 
 이 블로그에 매일 스터디 후기를 간단하게 적습니다.
 
-[siots-trello](https://trello.com/b/OA0kDwHH/siots-study)
+[siotz-trello](https://trello.com/b/OA0kDwHH/siotz-study)

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "4일차 - 객체, 프로토타입"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

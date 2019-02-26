@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "2주차 topic - Ajax, JSON"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---
@@ -277,7 +277,7 @@ JSON은 언어가 아니라 **데이터 형식**이다.
 
   ```JSON
   {
-    'studyname' : 'siots',
+    'studyname' : 'siotz',
     'location' : 'studybloom',
     'person' : 4
   }

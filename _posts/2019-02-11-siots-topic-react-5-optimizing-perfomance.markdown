@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "5주차- REACT - 5 - 성능 최적화"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

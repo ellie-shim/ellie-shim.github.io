@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "6일차 - 정규표현식"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---
@@ -79,7 +79,7 @@ ab cdd - 대응하지 않음 (공백도 문자열로 취급)
 ```md
 `/io?/`
 
-- 'siots'의 io와 대응
+- 'siotz'의 io와 대응
 - 'sioots'의 io와 대응 => ioo의 마지막 o는 대응값으로 나오지 않고 io만 대응된다는 점!!
 - 'sits'의 i와 대응
 ```
@@ -101,7 +101,7 @@ ab cdd - 대응하지 않음 (공백도 문자열로 취급)
 
 - 이 정규 표현식은 어떤 문자(개행문자 제외) 바로 뒤에 s가 온 형태의 문자열과 대응됨
 
-- 'siots'의 **ts**와 대응
+- 'siotz'의 **ts**와 대응
 ```
 
 ##### `(x)`

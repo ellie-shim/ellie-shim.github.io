@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "7일차 - 자바스크립트 엔진"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

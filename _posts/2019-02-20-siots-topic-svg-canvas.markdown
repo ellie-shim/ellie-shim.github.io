@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "6주차- SVG, Canvas"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---
@@ -60,7 +60,7 @@ background로 사용하기. 다운로드하는 동안 나머지 스타일 로딩
 
 ```css
 .logo {
-  background-image: url(siots.svg);
+  background-image: url(siotz.svg);
 }
 ```
 
@@ -69,7 +69,7 @@ background로 사용하기. 다운로드하는 동안 나머지 스타일 로딩
 `<iframe>` 요소 내 svg를 로드할 수 있습니다. 대부분의 작업을 구현할 수 있지만, 더 발전적인 기능을 사용하고자 한다면 가장 좋은 방법은 아닙니다.
 
 ```html
-<iframe src="siots.svg">Your browser does not support iframes</iframe>
+<iframe src="siotz.svg">Your browser does not support iframes</iframe>
 ```
 
 #### Embed
@@ -77,7 +77,7 @@ background로 사용하기. 다운로드하는 동안 나머지 스타일 로딩
 `<embed>` 요소는 '외부 응용프로그램', '대화형 콘텐츠'를 통합할 때 사용됩니다. svg를 구현할 수는 있지만 사용하지 않는 편이 낫습니다.
 
 ```html
-<embed type="image/svg+xml" src="siots.svg" />
+<embed type="image/svg+xml" src="siotz.svg" />
 ```
 
 #### 🐣 Object 🐣
@@ -85,7 +85,7 @@ background로 사용하기. 다운로드하는 동안 나머지 스타일 로딩
 `<object>` 요소는 HTML문서 내에 직접 내장시키지않고 svg를 조작하는 경우에 가장 좋은 방법입니다.
 
 ```html
-<object type="image/svg+xml" data="siots.svg"
+<object type="image/svg+xml" data="siotz.svg"
   >현재 브라우저는 iframe을 지원하지 않습니다.</object
 >
 ```
@@ -272,7 +272,7 @@ text 기능..
 css에서 사용하는 text-family등의 어트리뷰트들을 사용할 수 있습니다
 
 ```html
-<text x="10" y="10">Hello siots</text>
+<text x="10" y="10">Hello siotz</text>
 ```
 
 `text` 안에서 `<tspan>` 이라는 애를 쓸 수 있습니다.
@@ -384,7 +384,7 @@ canvas는 요소마다 브라우저를 좀 타는거 같네요 [canIUse](https:/
 ## `<canvas>`
 
 ```html
-<canvas id="siots" width="150" height="150">
+<canvas id="siotz" width="150" height="150">
   <img src="images/clock.png" width="150" height="150" alt=""/>
 </canvas>
 ```
@@ -412,14 +412,14 @@ canvas는 요소마다 브라우저를 좀 타는거 같네요 [canIUse](https:/
 이렇게 컨텍스트 타입을 지정해주어야 드뤄잉을 할수있슴니다~~
 
 ```js
-const canvas = document.querySelector('#siots');
+const canvas = document.querySelector('#siotz');
 var ctx = canvas.getContext('2d');
 ```
 
 이 메소드를 이용해 해당 브라우저에서 canvas를 지원하는지 안하는지를 확인할 수 있습니다
 
 ```js
-var canvas = document.getElementById('#siots');
+var canvas = document.getElementById('#siotz');
 
 if (canvas.getContext){
   var ctx = canvas.getContext('2d');

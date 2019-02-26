@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "9일차 - 브라우저 동작원리, GraphQL, Testing, npm"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

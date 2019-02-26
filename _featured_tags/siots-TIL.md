@@ -2,7 +2,7 @@
 layout: tag-blog
 title: TIL
 slug: til
-category: siots
+category: siotz
 menu: false
 order: 2
 ---

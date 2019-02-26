@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "1주차 topic - 비동기"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

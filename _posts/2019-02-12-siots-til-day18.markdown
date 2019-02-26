@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "18일차 - 리액트 하"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

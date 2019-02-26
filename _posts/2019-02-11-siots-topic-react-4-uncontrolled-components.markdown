@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "5주차- REACT - 4 - 제어되지 않는 컴포넌트"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---

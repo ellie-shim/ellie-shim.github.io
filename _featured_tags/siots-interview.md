@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Interview
 slug: interview
-category: siots
+category: siotz
 menu: false
 order: 4
 ---

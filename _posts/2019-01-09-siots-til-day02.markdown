@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "2일차 - Iterable, 클래스, 비동기"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---
@@ -193,7 +193,7 @@ for (let n of numberGen2()) {
 
 ### 3. Iterator Protocol
 
-[이터레이션 프로토콜](https://gitlab.com/siots-study/topics/wikis/uploads/4b4f1f0a8e5d51b3315eac577e041561/iteration-protocol.png)
+[이터레이션 프로토콜](https://gitlab.com/siotz-study/topics/wikis/uploads/4b4f1f0a8e5d51b3315eac577e041561/iteration-protocol.png)
 
 제너레이터 함수는 이터러블을 만드느 함수이다. 이터러블 객체 자체가 심볼.이터레이터를해서 가지고 있는게
 이터러블이 가능하다는것은 심볼.이터레이터라는 속성을 가지고있는거니까.....

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "3일차 - 알고리즘2, 예외처리, 모듈"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

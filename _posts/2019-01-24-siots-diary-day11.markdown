@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "스터디일기 - 11일차(20190124) "
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: diary
 comments: true
 ---

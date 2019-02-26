@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Diary
 slug: diary
-category: siots
+category: siotz
 menu: false
 order: 3
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "면접 질문 - 7일차(20190117) "
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: interview
 comments: true
 ---

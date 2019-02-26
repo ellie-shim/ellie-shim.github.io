@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "5일차 - DOM"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "자료구조"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---

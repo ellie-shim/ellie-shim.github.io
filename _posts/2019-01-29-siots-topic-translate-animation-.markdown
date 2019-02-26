@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "4주차- CSS - transform, transition, animation"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: topic
 comments: true
 ---
@@ -321,7 +321,7 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 - 각 구간에 적용시킬 CSS 스타일
 
 ```css
-@keyframes siots {
+@keyframes siotz {
   /* 0% 또는 from */
   0% {
     opacity: 1;
@@ -337,7 +337,7 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 
 애니메이션은 여러개의 속성을 가질 수 있습니다.
 
-- `animation-name` : `@keyframes` 이름 (위에서는 siots
+- `animation-name` : `@keyframes` 이름 (위에서는 siotz
   )
 - `animation-duration` : 타임 프레임 길이. 애니메이션 시작부터 마지막까지의 총 지속시간(기본값이 0이므로, 값을 명시해주지 않으면 아무런 효과도 나타나지 않음.)
 - `animation-timing-function` : 애니메이션 속도 조절
@@ -374,14 +374,14 @@ CSS 속성을 변경할 때, 변경이 즉시 영향을 미치게 하는 대신 
 `@keyframes`을 여러개 선언하고 엘리먼트에 쉼표를 사용하여 묶어줍니다
 
 ```css
-@keyframes siots {
+@keyframes siotz {
   /* style */
 }
 @keyframes yoonho {
   /* style */
 }
 .element {
-  animation: siots 4s 1s infinite linear alternate, yoonho 4s 1s infinite linear
+  animation: siotz 4s 1s infinite linear alternate, yoonho 4s 1s infinite linear
       alternate;
 }
 ```
@@ -401,30 +401,30 @@ animation
 
 ```css
 .element {
-  -webkit-animation: siots 4s 1s infinite linear alternate;
-  -moz-animation: siots 4s 1s infinite linear alternate;
-  -ms-animation: siots 4s 1s infinite linear alternate;
-  -o-animation: siots 4s 1s infinite linear alternate;
-  animation: siots 4s 1s infinite linear alternate;
+  -webkit-animation: siotz 4s 1s infinite linear alternate;
+  -moz-animation: siotz 4s 1s infinite linear alternate;
+  -ms-animation: siotz 4s 1s infinite linear alternate;
+  -o-animation: siotz 4s 1s infinite linear alternate;
+  animation: siotz 4s 1s infinite linear alternate;
 }
 ```
 
 @keyframes
 
 ```css
-@-webkit-keyframes siots {
+@-webkit-keyframes siotz {
   /* your style */
 }
-@-moz-keyframes siots {
+@-moz-keyframes siotz {
   /* your style */
 }
-@-ms-keyframes siots {
+@-ms-keyframes siotz {
   /* your style */
 }
-@-o-keyframes siots {
+@-o-keyframes siotz {
   /* your style */
 }
-@keyframes siots {
+@keyframes siotz {
   /* your style */
 }
 ```

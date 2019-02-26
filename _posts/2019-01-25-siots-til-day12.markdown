@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "12일차 - 정렬 알고리즘"
-subtitle: "siots"
-categories: siots
+subtitle: "siotz"
+categories: siotz
 tags: til
 comments: true
 ---
