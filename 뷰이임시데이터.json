@@ -1,0 +1,232 @@
+{
+    "id": 1,
+    "title": "",
+    "title_eng": "",
+    "season": 1,
+    "episode": 10,
+    "year": "2019.01",
+    "age": "19",
+    "country": "미국",
+    "description": "",
+    "tags": [
+        ""
+    ],
+    "actors": [
+        ""
+    ],
+    "actors_img": [
+        ""
+    ],
+    "directors": [
+        "몰라"
+    ],
+    "dirctors_img": [
+        ""
+    ],
+    "poster": "",
+    "background": "",
+    "stillcuts": [
+        ""
+    ]
+},
+{
+    "id": 1,
+    "title": "엄브렐러 아카데미",
+    "title_eng": "The Umbrella Academy",
+    "season": 1,
+    "episode" : 10,
+    "year": "2019.02",
+    "age": "15",
+    "country": "미국",
+    "description": "초능력을 가진 남매들이 아버지의 장례식에서 다시 모인다. 그들 앞에 드러나는 가족의 비밀과 인류의 미래. 종말을 막아야 한다. 애증을 접고, 모두 손을 잡아라",
+    "tags": [
+        "액션","모험","판타지","SF"
+    ],
+    "actors": [
+        "엘렌 페이지","톰 호퍼", "데이비드 카스타녜다", "애미 레이버-램프먼", "로버트 시한", "에이든 갤러거", "메리 J.블라이지", "캐머런 브리턴",  "콜므 포어"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/9klYBqJZIMNscul78QxPwzWrur9.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/yQRzlfR9ZNMvwCblJbdJdaW41nQ.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/xaSp9pmwY3VKmea78785m6pordH.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/cBkHUBzqoqrnkxDXWlqQmm91pD2.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/pamIz7pzThRsQkKHG64AL7wFhPB.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/mefVbh3XYQTywmrRlLN6xjUOs4S.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/mWT23vVYLuSLGDlaXhFql4BqW6T.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/Aobxj7I3aPOkHlQiiQSE64aHCud.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/ack88BRQ7mApRMOdaiOqEUh2FDu.jpg"
+        
+    ],
+    "directors": [
+        "스티브 블랙먼"
+    ],
+    "dirctors_img": [
+        ""
+    ],
+    "poster": "https://image.tmdb.org/t/p/w1280/UBhjjSojL8z2ThtitnyWaKM8nq.jpg",
+    "background": "",
+    "stillcuts": [
+        "https://image.tmdb.org/t/p/original/xwLmISkk42YneGNK8iUZDwOKNNS.jpg","https://image.tmdb.org/t/p/original/2DWt9QWHK9p2pynDvOKjrQO8wPN.jpg","https://image.tmdb.org/t/p/original/ejXj76nGRHQVPUMgw3z78X5jnei.jpg","https://image.tmdb.org/t/p/original/8IZ2UxuFePxmMhzyqpBGNN6VznQ.jpg"
+    ]
+},
+{
+    "id": 1,
+    "title": "로스트",
+    "title_eng": "Lost",
+    "season": 1,
+    "episode" : 24,
+    "year": "2004.09",
+    "age": "15",
+    "country": "미국",
+    "description": "남태평양의 한 섬에 오세아닉 815 항공기가 불시착하지만 동체 부분과 후미 부분이 부서지며 공중분해되면서 이름모를 섬에 떨어진다. 의사, 이송 중이던 죄수, 전직 이라크군, 로큰롤 가수 등 다양한 직업을 가진 그들은 구조되어 살아남기 위해 여러 방법을 동원한다. 하지만 구조대는 오지 않고, 밤이 되자 정글 안에서는 무시무시한 소리가 들려온다. 서서히 다가오는, 그러나 보이지 않는 정체 불명의 괴물과 괴이현상들. 고립된 생존자들은 점점 두려움에 빠져들고 극한의 상황으로 내몰리게 된다.",
+    "tags": [
+        "액션", "모험", "드라마", "미스터리", "생존","섬"
+    ],
+    "actors": [
+        "매튜 폭스", "나빈 앤드류스", "에밀리 드 라빈", "조지 가르시아", "매기 그레이스", "조쉬 할로웨이", "말콤 데이빗 켈리", "대니얼 대 김", "김윤진", "에반젤린 릴리"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/o8hMOleGaZ4BbZQFJXrU0xtMsSI.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/17tEnAaoxfrjvhGaRIFaoKQHD9W.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/8BpprXp7VdbASWBH3aAbHBi71D0.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/sPvMz5gWUbYc1vw0waieVIhkyb0.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/jYgBu0uvED7P7ir5FCsFjqAi0hN.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/lcHtWHTZX9f1ez8yLTyumG5Fwfd.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/rLnHnEyFmPxnS7FlALTBlEJv8tl.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/xnaUUZkulAAwS5sbZ2cL7pHal4x.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/5Any2PNfsBU2KXpq0g15THJMgBM.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/h8Lerr3D362n1jZvywtbvUzgBIN.jpg"
+    ],
+    "directors": [
+        "J.J. 에이브람스"
+    ],
+    "dirctors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/xljsYopubv9egYzclBPNf9EAYxB.jpg"
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/enySJLtbJuAk1GW9cZBMv9uVQzZ.jpg",
+    "background": "http://ap2s.net/upload/images/thumbnails/LostPoster-1024x636-center.jpg",
+    "stillcuts": [
+        "https://m.media-amazon.com/images/M/MV5BMmNjYTJmNDYtZTZlOC00YzI1LWFkODgtODQ4OGFiNGE4NWI1L2ltYWdlXkEyXkFqcGdeQXVyNjY1ODM4NDY@._V1_.jpg","https://i.ytimg.com/vi/XIJLK1F-jPw/maxresdefault.jpg","https://tle1lost.files.wordpress.com/2007/09/1x01_wreckage.jpg","http://images2.fanpop.com/image/photos/10900000/Lost-Season-1-katerinoulalove-10988142-2560-1707.jpg"
+    ]
+},
+{
+    "id": 1,
+    "title": "투 브로크 걸즈",
+    "title_eng": "2 Broke Girls",
+    "season": 1,
+    "episode": 24,
+    "year": "2011.09",
+    "age": "15",
+    "country": "미국",
+    "description": "뉴욕 브룩클린에서 웨이트리스로 일하는 20대 여성, 맥스와 캐롤라인의 이야기. 금수저 출신 캐롤라인과 빈곤한 가정에서 자란 맥스는 삶을 바라보는 방식은 다르지만, 함께 컵케이크 가게를 내기 위해 돈을 모으고 있다.",
+    "tags": [
+        "코미디"
+    ],
+    "actors": [
+        "캣 데닝스", "베스 베어스", "조너선 카이트", "가렛 모리스", "매튜 모이"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/cChXMQL9Np1G7OqSExcP3HHjZHH.jpg", "https://image.tmdb.org/t/p/w132_and_h132_face/fsqd93OGqBmzd17W3p9Ipt2ADEm.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/yjCvcUO8DnhlFcLVzIQsbBrbxsV.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/2Sd1njRdKzWEHNY2AqFZGTv1xtT.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/b6I500CFqDZmMgWbfaUwKvQBGL.jpg"
+    ],
+    "directors": [
+        "제임스 버로우"
+    ],
+    "dirctors_img": [
+        ""
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/faaVj7xQAdKaoRcqX2lBOFJvmiu.jpg",
+    "background": "https://image.tmdb.org/t/p/original/3s06cmm5h2lhsJuoc0m8wdTK10e.jpg",
+    "stillcuts": [
+        "https://image.tmdb.org/t/p/original/3Fa9QTDMsErAr8bXzUa0ATt8CI1.jpg","https://d24v5oonnj2ncn.cloudfront.net/wp-content/uploads/2012/01/13011604/2_Broke_Girls_Season_1_Episode_14_And_The_Upstairs_Neighbor_1-7353-590-700-80.jpg","http://images5.fanpop.com/image/photos/29400000/-And-the-Blind-Spot-2-broke-girls-29452209-500-332.jpg"
+    ]
+},
+{
+    "id": 1,
+    "title": "하우스",
+    "title_eng": "House",
+    "season": 1,
+    "episode": 22,
+    "year": "2004.11",
+    "age": "15",
+    "country": "미국",
+    "description": "프린스턴 플레인즈보로 대학병원의 진단의학과 과장인 그레고리 하우스는 환자들을 성심성의껏 돌보는 데는 영 꽝인 의사. 사사건건 병원 원장인 리사 커디와 부딪히는 그는 못된 매너와 그 매너를 더욱 돋보이게 하는 외모로 유명하지만, 또한 창조적인 생각과 결점없는 의학적 본능을 유감없이 발휘하는 최고의 의사이기도 하다. 천재적인 분석능력을 갖춘 전염병 전문의로서 그가 이제 인명을 살리기 위한 흥미롭고 미스터리한 의학의 퍼즐을 풀어간다.",
+    "tags": [
+        "의학", "드라마", "코미디"
+    ],
+    "actors": [
+        "휴 로리", "리사 에델스테인", "로버트 숀 레오나드", "오마 엡스", "제니퍼 모리슨", "제시 스펜서"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/3qCmEHtq5fBW8dbzsYDSy16Zqb0.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/mPTRiyPAf2cxAEfZJILIu9NDwjZ.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/90xoBVpR2LzaFdo83KmcxjXR7Dg.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/t4Qg5ANKK2idfOt4RzWzhiP7IEv.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/sqn3ySCTYw82vtW10oqrmtg3B9L.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/a6NazjznWxk1f8ObeoivqpROQQE.jpg"
+    ],
+    "directors": [
+        "브라이언 싱어, 데이비드 쇼어"
+    ],
+    "dirctors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/to8mWJabPoWkphkbYKoutCVSj06.jpg","https://image.tmdb.org/t/p/w132_and_h132_face/uLpE2VLq6O2Q3o4MIbp8EZrb28u.jpg"
+    ],
+    "poster": "https://image.tmdb.org/t/p/w1280/lkvhReTBZ2Ksl0Dl5Oplsf6UYkF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/lEKidcPzVqUAxbaLcjLcUVYihdY.jpg",
+    "stillcuts": [
+        "https://i.ytimg.com/vi/nr8k4K89Wmw/maxresdefault.jpg", "http://images2.fanpop.com/images/soapbox/dr-eric-foreman_7112_4.jpg?cache=1228763306"
+    ]
+},
+{
+    "id": 1,
+    "title": "크리미널 마인드: 국제범죄수사팀",
+    "title_eng": "Criminal Minds: Beyond Borders",
+    "season": 1,
+    "episode": 13,
+    "year": "2016.03",
+    "age": "15",
+    "country": "미국",
+    "description": "해외 거주, 여행, 출장 및 연수 중인 미국인들이 휘말린 사건을 맡는 FBI의 국제범죄수사팀. 각 나라의 다른 문화를 존중하고 현지 경관과 협력하여 사건을 해결한다.",
+    "tags": [
+        "드라마", "범죄", "수사","추리"
+    ],
+    "actors": [
+        "게리 시니즈", "다니엘 헤니", "타일러 제임스 윌리엄스", "알라나 드 라 가르자", "애니 푼케"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/ngYV91xYfCu0JNcSxJ4yQ7tzOna.jpg", "https://image.tmdb.org/t/p/w132_and_h132_face/wwLWCVSP9la3dG6xQBqUd1YzwMh.jpg", "https://image.tmdb.org/t/p/w132_and_h132_face/AhP3h8PTolg7vsiz85wET0U99bE.jpg", "https://image.tmdb.org/t/p/w132_and_h132_face/x6aCoGwSYExAqK9vqPBg7VRk3jc.jpg", 
+        "https://image.tmdb.org/t/p/w132_and_h132_face/vHmtdg8O1JtL4RblSgfiXMbSsCl.jpg"
+    ],
+    "directors": [
+        "글렌 커쇼"
+    ],
+    "dirctors_img": [
+        ""
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/36gMBxOXEvDdbXlzNGQLAYfHEJO.jpg",
+    "background": "https://i.ytimg.com/vi/0Ubshx5m824/maxresdefault.jpg",
+    "stillcuts": [
+        "https://cdn1.thr.com/sites/default/files/imagecache/scale_crop_768_433/2016/03/criminal_minds_beyond_borders_s01e07_still.jpg","http://cimg.tvgcdn.net/i/2017/11/01/ab1f0237-6dbc-4301-ad82-a112ac3478e8/171101-news-criminal-minds.jpg"
+    ]
+},
+{
+    "id": 1,
+    "title": "크리미널 마인드: 국제범죄수사팀",
+    "title_eng": "Criminal Minds: Beyond Borders",
+    "season": 2,
+    "episode": 13,
+    "year": "2017.03",
+    "age": "15",
+    "country": "미국",
+    "description": "해외 거주, 여행, 출장 및 연수 중인 미국인들이 휘말린 사건을 맡는 FBI의 국제범죄수사팀. 각 나라의 다른 문화를 존중하고 현지 경관과 협력하여 사건을 해결한다.",
+    "tags": [
+        "드라마",
+        "범죄",
+        "수사",
+        "추리"
+    ],
+    "actors": [
+        "게리 시니즈",
+        "다니엘 헤니",
+        "타일러 제임스 윌리엄스",
+        "알라나 드 라 가르자",
+        "애니 푼케"
+    ],
+    "actors_img": [
+        "https://image.tmdb.org/t/p/w132_and_h132_face/ngYV91xYfCu0JNcSxJ4yQ7tzOna.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/wwLWCVSP9la3dG6xQBqUd1YzwMh.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/AhP3h8PTolg7vsiz85wET0U99bE.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/x6aCoGwSYExAqK9vqPBg7VRk3jc.jpg",
+        "https://image.tmdb.org/t/p/w132_and_h132_face/vHmtdg8O1JtL4RblSgfiXMbSsCl.jpg"
+    ],
+    "directors": [
+        "글렌 커쇼"
+    ],
+    "dirctors_img": [
+        ""
+    ],
+    "poster": "https://image.tmdb.org/t/p/original/anKWFD2HdAjVk5f4GOtQ8LahXpj.jpg",
+    "background": "https://i.ytimg.com/vi/0Ubshx5m824/maxresdefault.jpg",
+    "stillcuts": [
+        "https://s3.amazonaws.com/caamedia/wp-content/uploads/2016/03/daniel-henney-620x374.jpg","http://eggtail.net/wp-content/uploads/2017/06/daniel_henney.jpg","http://criminalmindshub.weebly.com/uploads/5/0/0/6/50063667/published/108706-0294b-www-imagesplitter-net.jpeg?1490760341"
+    ]
+},
