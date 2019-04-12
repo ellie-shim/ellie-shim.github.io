@@ -58,4 +58,4 @@ No commits found for "ellie-shim"(using ellie.shim.s@gmail.com"
 
 라는 문구가 뜬다..
 
-로컬에서 폴더를 지우고 다시 클론 받아보았다.
+로컬에서 폴더를 지우고 다시 클론 받아보았다. 잘될깡
