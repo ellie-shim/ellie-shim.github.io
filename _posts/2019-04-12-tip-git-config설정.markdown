@@ -47,3 +47,15 @@ ellie.shim.s@gmail.com
 ```
 
 잘 됐다..이제 커밋을 해보자...쥬ㄹ르르르르륵...내 잔디 돌려줘 엉엉
+
+## 또 다른 문제
+
+푸쉬도 잘 되고 잔디도 잘 심어지는데 문제는, 커밋 내역을 눌렀더니
+
+```
+No commits found for "ellie-shim"(using ellie.shim.s@gmail.com"
+```
+
+라는 문구가 뜬다..
+
+로컬에서 폴더를 지우고 다시 클론 받아보았다.
