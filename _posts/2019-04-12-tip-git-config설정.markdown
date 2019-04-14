@@ -1,5 +1,5 @@
 ---
-llayout: post
+layout: post
 title: "컴퓨터를 바꾸고 잔디가 심어지지 않을 때..gitconfig 초기 설정"
 subtitle: "git config"
 categories: tip
