@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Women TechMakers Seoul 2019"
+subtitle: "git config"
+categories: tip
+tags: tip
+comments: true
+---
+
+## Women TechMakers Seoul 2019
+
+4월 13일 코엑스에서 Women TechMakers Seoul 2019가 열렸다.
+
+시옷즈와 함께 다녀왔다.
+
+요즘 컴퍼런스 다니는거 너무 재밌당....ㅎㅎㅎㅎㅎ
+
+여성 개발자들의 얘기를 듣는데 너무 넘넘 좋았다.
+
+다들 멋있고.... 나도 언젠가 그 자리에 서서 다른 여성 개발자에게 힘이 되기를 ㅎ\_ㅎ
