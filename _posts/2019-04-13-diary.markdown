@@ -2,8 +2,8 @@
 layout: post
 title: "Women TechMakers Seoul 2019"
 subtitle: "git config"
-categories: tip
-tags: tip
+categories: diary
+tags: diary
 comments: true
 ---
 
