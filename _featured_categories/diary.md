@@ -1,7 +1,7 @@
 ---
 layout: list
 title: Diary
-slug: Diary
+slug: diary
 menu: true
 submenu: false
 order: 4
