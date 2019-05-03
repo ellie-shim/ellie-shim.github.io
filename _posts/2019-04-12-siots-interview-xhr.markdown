@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "면접질문 정리해보기 5 - XHR"
-subtitle: "siotz"
-categories: siotz
-tags: interview
+subtitle: "devlog"
+categories: devlog
+tags: devlog
 comments: true
 ---
 
