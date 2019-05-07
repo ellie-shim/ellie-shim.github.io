@@ -1,0 +1,61 @@
+---
+layout: post
+title: "로컬 스토리지, 세션 스토리지, 쿠키"
+subtitle: "로컬 스토리지, 세션 스토리지, 쿠키"
+categories: dev
+tags: dev
+comments: true
+---
+
+## 로컬 스토리지(localStorage), 세션 스토리지(sessionStorage)
+
+HTML5에서 추가된 저장소입니다. key-value 형태로 간단한 키와 값을 저장할 수 있습니다.
+
+로컬 스토리지와 세션 스토리지의 차이점은 데이터의 영구성입니다.
+
+비밀번호 같은 중요한 정보는 저장하지 않는 것이 좋습니다.
+
+클라이언트에 저장하는 것이기 때문에 보안에 취약합니다.
+
+#### 로컬 스토리지
+
+로컬 스토리지의 데이터는 사용자가 지우지 않는 이상 계속 브라우저에 남아있습니다.
+
+지속적으로 필요한 데이터(자동 로그인 등)는 로컬스토리지에 저장합니다.
+
+로컬 스토리지는 `window.localStorage`에 위치합니다. 값으로는 string, boolean, number, null, undefined 등을 저장할 수 있지만 모두 문자열로 변환됩니다.
+
+```js
+localStorage.setItem("name", "ellie");
+localStorage.setItem("age", 29);
+localStorage.getItem("name"); // ellie
+localStorage.getItem("age"); // 문자열 29
+localStorage.removeItem("age");
+localStorage.getItem("age"); // null (삭제 됨)
+localStorage.clear(); // 전체 삭제
+```
+
+한 번에 한 객체를 통으로 저장하려면 `JSON.stringify`를 사용할 수 있습니다. 받을때는 `JSON.parse`를 할 수 있습니다.
+
+```js
+localStorage.setItem("object", JSON.stringify({ name: "ellie" }));
+JSON.parse(localStorage.getItem("object")); // {name : 'ellie'}
+```
+
+#### 세션 스토리지
+
+세션 스토리지의 데이터는 윈도우나 브라우저 탭을 닫을 경우 제거됩니다.
+
+잠깐동안 필요한 데이터(일회성 로그인 정보 등)는 세션 스토리지에 저장합니다.
+
+세션 스토리지는 `window.sessionStorage`에 위치합니다.
+
+로컬 스토리지와 메소드가 같습니다.
+
+## 쿠키
+
+로컬 스토리지와 세션 스토리지가 나오기 이전에 사용하던 브라우저 저장소입니다.
+
+쿠키는 만료기한이 있는 key-value 저장소입니다.
+
+4kb의 용량 제한이 있고, 매 서버 요청마다 서버로 쿠키가 같이 전송됩니다.
