@@ -32,15 +32,15 @@ age 값에 여러번 set을 해주어도, 가장 마지막에 set한 값만 유�
 set은 값의 집합인데, 배열과 다르게 중복 된 값을 가지지 않습니다.
 
 ```js
-let set = new Set();
+let setEx = new Set();
 
-set.add(1);
-set.add(2);
-set.add(3);
-set.add("3"); // string
-set.add(1);
+setEx.add(1);
+setEx.add(2);
+setEx.add(3);
+setEx.add("3"); // string
+setEx.add(1);
 
-console.log(set); // Set { 1, 2, 3, '3' }
+console.log(setEx); // Set { 1, 2, 3, '3' }
 ```
 
 set에 같은 값을 여러번 add 해주어도 중복 된 값은 무시합니다.
@@ -52,10 +52,10 @@ const map = new Map();
 map.set("name", "ellie");
 map.set("age", 29);
 
-const set = new Set();
-set.add(1);
-set.add(2);
-set.add(3);
+const setEx = new Set();
+setEx.add(1);
+setEx.add(2);
+setEx.add(3);
 
 const arr = [1, 2, 3];
 
@@ -71,7 +71,7 @@ const obj = { name: "ellie", age: 29 };
 콜백함수에서 배열 요소의 key(index)와 value에 접근할 수 있습니다.
 
 ```js
-function forEachFunc(map, set, arr, obj) {
+function forEachFunc(map, setEx, arr, obj) {
   function loopFunc(value, index) {
     console.log(`${value},,,${index}`);
   }
@@ -79,7 +79,7 @@ function forEachFunc(map, set, arr, obj) {
   map.forEach(loopFunc);
   console.log("==set==");
 
-  set.forEach(loopFunc);
+  setEx.forEach(loopFunc);
   console.log("==arr==");
 
   arr.forEach(loopFunc);
@@ -87,7 +87,7 @@ function forEachFunc(map, set, arr, obj) {
 
   obj.forEach(loopFunc);
 }
-forEachFunc(map, set, arr, obj);
+forEachFunc(map, setEx, arr, obj);
 ```
 
 ![forEach 결과값 확인](https://ellie-shim.github.io/assets/img/forEachloop.png)
@@ -104,14 +104,14 @@ forEachFunc(map, set, arr, obj);
 객체 자신의 속성 및 상속 받은 속성 중 열거 가능한(enumerable) 속성(객체의 enumerable 속성이 true로 설정 된 속성)의 이름을 배열로 반환합니다.
 
 ```js
-function forInFunc(map, set, arr, obj) {
+function forInFunc(map, setEx, arr, obj) {
   console.log("==map==");
   for (const i in map) {
     console.log(i);
   }
 
   console.log("==set==");
-  for (const i in set) {
+  for (const i in setEx) {
     console.log(i);
   }
 
@@ -126,7 +126,7 @@ function forInFunc(map, set, arr, obj) {
   }
 }
 
-forInFunc(map, set, arr, obj);
+forInFunc(map, setEx, arr, obj);
 ```
 
 ![for in 결과값 확인](https://ellie-shim.github.io/assets/img/forinloop.png)
@@ -149,14 +149,14 @@ ES6에 새로 추가된 반복문입니다. 해당 구문을 사용하기 위해
 - Set
 
 ```js
-function forOfFunc(map, set, arr, obj) {
+function forOfFunc(map, setEx, arr, obj) {
   console.log("==map==");
   for (const i of map) {
     console.log(i);
   }
 
   console.log("==set==");
-  for (const i of set) {
+  for (const i of setEx) {
     console.log(i);
   }
 
@@ -170,7 +170,7 @@ function forOfFunc(map, set, arr, obj) {
     console.log(i);
   }
 }
-forOfFunc(map, set, arr, obj);
+forOfFunc(map, setEx, arr, obj);
 ```
 
 ![for of 결과값 확인](https://ellie-shim.github.io/assets/img/forofloop.png)
