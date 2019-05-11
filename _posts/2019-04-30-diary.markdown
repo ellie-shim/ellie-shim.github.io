@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Google Webmaster Conference Seoul"
+subtitle: "구글 웹마스터 컨퍼런스 서울"
+categories: diary
+tags: diary
+comments: true
+---
+
+![구글 웹마스터 컨퍼런스 ](https://ellie-shim.github.io/assets/img/webmaster_conference_seoul_center_small_quarter.png)
+
+4월 30일 안시옷님과 둘이 함께한 구글 웹마스터 컨퍼런스.
+
+장소는 구글 스타트업 캠퍼스
