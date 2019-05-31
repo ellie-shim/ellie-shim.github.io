@@ -38,3 +38,5 @@ comments: true
 1. pagespeed insight 같은데서 확인할 수 있다.
 
 구글 개발자님들 멋.있.어.
+
+- 서치콘솔에 내 블로그를 등록해보자!
