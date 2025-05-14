@@ -13,20 +13,19 @@ url: https://ellie-shim.github.io/
 baseurl: ""
 
 # A very short description of your page
-tagline: 주니어 프론트엔드 개발자 심소영입니다.
+tagline: 프론트엔드 개발자 심소영입니다.
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description: >
-  항상 공부하는 개발자입니다.
-
+프론트엔드 개발자 심소영입니다
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name: soyoung
   email: ellie.shim.s@gmail.com
 
 # Fallback image and color
-image: /assets/img/nap-2.jpeg
+# image: /assets/img/nap-2.jpeg
 color: "#4f86aa"
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
