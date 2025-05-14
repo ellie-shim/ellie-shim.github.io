@@ -17,8 +17,7 @@ tagline: 프론트엔드 개발자 심소영입니다.
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
-description: >
-프론트엔드 개발자 심소영입니다
+description: 프론트엔드 개발자 심소영입니다
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name: soyoung
